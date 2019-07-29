@@ -253,11 +253,14 @@ post:
     - id: alipay
       src: /public/image/alipay.jpg
 
+
+
+
 valine:
-  enable: true
+  enable: false
   src: //cdn.jsdelivr.net/npm/valine
-  appId: 9hABRddSuEkTgqLrt1VSK5B1-gzGzoHsz
-  appKey: NJ7RwmgrxsF7KDzlqU7YewlL
+  appId:
+  appKey:
   notify: true # 评论回复邮件提醒
   verify: true # 验证码服务
   avatar: identicon
