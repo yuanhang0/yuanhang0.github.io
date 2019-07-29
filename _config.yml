@@ -1,7 +1,7 @@
-title: wu-kan
-url: http://wu-kan.github.io
+title: ibuki
+url: http://yuanhang0.github.io
 baseurl: '' # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/public`前也要加，即`/your_baseurl/public`。这一项结尾不要有'/'
-author: WuK
+author: YW
 
 permalink: /posts/:categories/:title # 博文目录
 
@@ -24,24 +24,24 @@ head: # 删改前确定知道自己在做什么
     value: content-type
   - key: content
     value: 'text/html; charset=utf-8'
-- tag: meta # google站点验证
-  var:
-  - key: name
-    value: google-site-verification
-  - key: content
-    value: YIKi1rBnyUaS-DMYiluseI5kZzTwjCkTFmKkSkMZDJk
-- tag: meta # baidu站点验证
-  var:
-  - key: name
-    value: baidu-site-verification
-  - key: content
-    value: bEFDJ1LvXb
-- tag: meta # yandex站点验证
-  var:
-  - key: name
-    value: yandex-verification
-  - key: content
-    value: 52253e02830b443c
+# - tag: meta # google站点验证
+#   var:
+#   - key: name
+#     value: google-site-verification
+#   - key: content
+#     value: YIKi1rBnyUaS-DMYiluseI5kZzTwjCkTFmKkSkMZDJk
+# - tag: meta # baidu站点验证
+#   var:
+#   - key: name
+#     value: baidu-site-verification
+#   - key: content
+#     value: bEFDJ1LvXb
+# - tag: meta # yandex站点验证
+#   var:
+#   - key: name
+#     value: yandex-verification
+#   - key: content
+#     value: 52253e02830b443c
 - tag: link
   var:
   - key: rel
