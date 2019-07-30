@@ -9,15 +9,16 @@ comments: true
 For an additive error model \$$ y = f(X) + \varepsilon, \quad \Var(\varepsilon) = \sigma^2, $$
 
 the *effective degrees-of-freedom* is defined as
+
 $$
-df(\hat{Y}) = \frac{1}{\sigma^2} \sum_{i=1}^{N} \Cov(\hat{y}_i, y_i).
+\text{df}(\hat{Y}) = \frac{1}{\sigma^2} \sum_{i=1}^{N} \Cov(\hat{y}_i, y_i).
 $$
 
 In a linear fitted method where we can write $\hat{Y} = S Y$ for some $n\times n$ matrix $S$, the above effective degrees-of-freedom can be calculated as follows:
 
 $$
-df(\hat{Y}) = \frac{1}{\sigma^2} \operatorname{Tr}\( \Cov(\hat{Y}, Y) \) = \frac{1}{\sigma^2} \operatorname{Tr}\( \Cov(SY, Y) \)
-=  \frac{1}{\sigma^2} \operatorname{Tr}\( S \Var(Y) \) = \operatorname{Tr}(S).
+\text{df}(\hat{Y}) = \frac{1}{\sigma^2} \operatorname{Tr}\left( \Cov(\hat{Y}, Y) \right) = \frac{1}{\sigma^2} \operatorname{Tr}\left( \Cov(SY, Y) \right)
+=  \frac{1}{\sigma^2} \operatorname{Tr}\left( S \Var(Y) \right) = \operatorname{Tr}(S).
 $$
 We see that it only depends on the diagonal elements of $S$.
 
@@ -37,6 +38,6 @@ where $H = X(X'X)^{-1}X'$ is the hat matrix of size $n\times n$.
 Thus, we see that the effective degrees-of-freedom for this method is given by
 
 $$
-df(\hat{Y}) = \operatorname{Tr}(H) = p+1,
+\text{df}(\hat{Y}) = \operatorname{Tr}(H) = p+1,
 $$
-which is exactly the same as the number of parameters in $\beta$, i.e., the lenght of $\beta$.
+which is exactly the same as the number of parameters in $\beta$, i.e., the length of $\beta$.
