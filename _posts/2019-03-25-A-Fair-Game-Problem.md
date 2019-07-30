@@ -2,7 +2,7 @@
 layout: post
 title: A Fair Game Problem
 # subtitle: Each post also has a subtitle
-showtag: Probability
+tag: Probability
 date: 2019-03-25
 comments: true
 ---

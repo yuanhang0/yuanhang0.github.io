@@ -2,7 +2,7 @@
 layout: post
 title: Duplication of a Data Set
 # subtitle: Each post also has a subtitle
-showtag: Statistics
+tag: Statistics
 date: 2019-04-10
 comments: true
 ---

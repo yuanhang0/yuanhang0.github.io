@@ -2,7 +2,7 @@
 layout: post
 title: A Counting Problem in Random Walk
 # subtitle: Each post also has a subtitle
-showtag: Probability
+tag: Probability
 date: 2019-07-15
 comments: true
 ---

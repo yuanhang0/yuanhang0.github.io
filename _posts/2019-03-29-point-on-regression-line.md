@@ -2,7 +2,7 @@
 layout: post
 title: Removal of a Data Point on the Regression Line
 # subtitle: Each post also has a subtitle
-showtag: Statistics
+tag: Statistics
 date: 2019-03-29
 comments: true
 ---
