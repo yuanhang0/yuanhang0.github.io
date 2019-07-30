@@ -88,17 +88,19 @@ $$
 \begin{aligned}
 \text{df}(\hat{Y}^{\text{ridge}}) & = \operatorname{Tr}(H_{\lambda}) = \operatorname{Tr}(UD\left(D^2 +\lambda I_n\right)^{-1} DU')\\
 & = \operatorname{Tr}(D\left(D^2 +\lambda I_n\right)^{-1} DU'U) = \operatorname{Tr}(D\left(D^2 +\lambda I_n\right)^{-1} D) \\
-& = \sum_{i=1}{N} \frac{d_i^2}{d_i^2+\lambda} < p.
+& = \sum_{i=1}^{N} \frac{d_i^2}{d_i^2+\lambda} < p.
 \end{aligned}
 $$
 
-We see that as a shrinkage method, the effective degrees-of-freedom in ridge regression is smaller than $p$. To understand this, we may think of an equivalent formulation of the ridge regression:
+We see that, as a shrinkage method, the effective degrees-of-freedom in ridge regression is smaller than $p$. To understand this, we may think of an equivalent formulation of the ridge regression:
 
 $$
 \begin{aligned}
-\operatorname*{min}\limits_{\beta} \|Y-X\beta\|^2+\lambda \|\beta \|^2  \quad \Leftrightarrow \quad &\operatorname*{min}\limits_{\beta} &\|Y-X\beta\|^2  \\
-                                                                                        & \text{s.t.} & \|\beta \|^2 \le t.
+\operatorname*{min}\limits_{\beta} \|Y-X\beta\|^2+\lambda \|\beta \|^2  \quad \Leftrightarrow \quad
+
+&\operatorname*{min}\limits_{\beta} &\|Y-X\beta\|^2  \\
+          & \text{s.t.} & \|\beta \|^2 \le t.
 \end{aligned}
 $$
 
-This now makes more intuitive sense: instead of minimizing over all $\beta \in \mathbb{R^n}$, we restrict our choices to those $\beta$ with small $l_2$ norms. Thus, the effective degrees-of-freedom should be smaller compared to the unconstrainted case, i.e., the least square estimate.
+This now makes more intuitive sense: instead of minimizing over all $\beta \in \mathbb{R^n}$, we restrict our choices to those $\beta$ with small $\ell^2$ norms. Thus, the effective degrees-of-freedom should be smaller compared to the unconstrained case, i.e., the least square estimate.
