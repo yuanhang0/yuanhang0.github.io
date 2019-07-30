@@ -4,13 +4,6 @@
   <title>
     {{ page.title }} &middot; {{ site.title }}
   </title>
-</head>
-
-<body>
-  {{ content }}
-  <script src="/public/js/katex.js"></script>
-  <script src="/public/js/mermaid.js"></script>
-
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       tex2jax: {
@@ -20,6 +13,12 @@
     });
   </script>
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+
+<body>
+  {{ content }}
+  <script src="/public/js/katex.js"></script>
+  <script src="/public/js/mermaid.js"></script>
 </body>
 
 </html>
