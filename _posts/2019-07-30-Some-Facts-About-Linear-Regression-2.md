@@ -75,8 +75,9 @@ which gives:
 
 $$
 \begin{aligned}
-H_{\lambda} &= X(X'X+\lambda I_n)^{-1}X' = UDV'\left(VD^2V'+\lambda I_n \right)^{-1} VDU' = UDV'\left(V(D^2 +\lambda I_n)V'\right)^{-1} VDU'\\
-            &=  UD\left(D^2 +\lambda I_n\right)^{-1} DU'.
+H_{\lambda} &= X(X'X+\lambda I_n)^{-1}X' = UDV'\left(VD^2V'+\lambda I_n \right)^{-1} VDU'\\
+&= UDV'\left(V(D^2 +\lambda I_n)V'\right)^{-1} VDU'\\
+&=  UD\left(D^2 +\lambda I_n\right)^{-1} DU'.
 \end{aligned}
 $$
 
