@@ -34,7 +34,6 @@ $$
 which implies that $\hat\beta$ **does not change**.
 
 Recall the formula for $R^2$ is $$ R^2 = \frac{ \| \hat Y -\bar Y \| ^2}{ \|  Y -\bar Y \| ^2 } $$. We note that
-
 $$
 \bar{Y}_{\text{new}} =\begin{pmatrix}
 \bar{Y} \\
@@ -43,10 +42,9 @@ $$
    \hat{Y} \\
    \hat{Y}
   \end{pmatrix}.
-  $$
+$$
 
 So we have
-
 $$
 \begin{aligned}
 R^2_{\text{new}} =  \frac{\|\hat Y_{\text{new}} -\bar Y_{\text{new}} \|^2}{\|  Y_{\text{new}} -\bar Y_{\text{new}} \|^2} = \frac{2\|\hat Y -\bar Y \|^2}{2\|  Y -\bar Y \|^2} = R^2,
