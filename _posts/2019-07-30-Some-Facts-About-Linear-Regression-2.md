@@ -6,7 +6,7 @@ tag: [Statistics]
 date: 2019-07-30
 comments: true
 ---
-For an additive error model \$$ y = f(X) + \varepsilon, \quad \Var(\varepsilon) = \sigma^2, $$
+For an additive error model \$$ Y = f(X) + \varepsilon, \quad \Var(\varepsilon) = \sigma^2 I_n, $$
 
 the *effective degrees-of-freedom* is defined as
 
@@ -20,6 +20,7 @@ $$
 \text{df}(\hat{Y}) = \frac{1}{\sigma^2} \operatorname{Tr}\left( \Cov(\hat{Y}, Y) \right) = \frac{1}{\sigma^2} \operatorname{Tr}\left( \Cov(SY, Y) \right)
 =  \frac{1}{\sigma^2} \operatorname{Tr}\left( S \Var(Y) \right) = \operatorname{Tr}(S).
 $$
+
 We see that it only depends on the diagonal elements of $S$.
 
 The linear regression with ordinary least square estimate is an example of the linear fitted method. As we seen in the previous post, the least square estimate of $\beta$ is given by
@@ -96,7 +97,7 @@ We see that as a shrinkage method, the effective degrees-of-freedom in ridge reg
 $$
 \begin{aligned}
 \operatorname*{min}\limits_{\beta} \|Y-X\beta\|^2+\lambda \|\beta \|^2  \quad \Leftrightarrow \quad &\operatorname*{min}\limits_{\beta} &\|Y-X\beta\|^2  \\
-                                                                                        & \text{s.t.} & \|\beta \|^2 \le t
+                                                                                        & \text{s.t.} & \|\beta \|^2 \le t.
 \end{aligned}
 $$
 
