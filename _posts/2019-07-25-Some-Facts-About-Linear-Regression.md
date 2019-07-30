@@ -2,7 +2,7 @@
 layout: post
 title: Some Applications of the Hat Matrix (1)
 # subtitle: Each post also has a subtitle
-tag: Statistics
+tag: [Statistics]
 date: 2019-07-25
 comments: true
 ---
