@@ -41,7 +41,7 @@ body {
 }
 
 html {
-  font-family: 'Lora',"PT Serif", Georgia, "Times New Roman", serif;
+  font-family: 'Lora'"PT Serif", Georgia, "Times New Roman", serif;
   font-size: 18px;
 }
 
@@ -456,7 +456,7 @@ a.pagination-item:hover {
 
 /* Orange */
 .theme-base-09 .sidebar,
-.theme-base-09 .sidebar-toggle:active,
+.theme-base-09 .sidebar-toggle:disabled,
 .theme-base-09 #sidebar-checkbox:checked ~ .sidebar-toggle {
   background-color: #d28445;
 }
