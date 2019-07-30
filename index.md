@@ -1,6 +1,6 @@
 ---
 layout: page
-title:
+title: 
 showtag:
 #- ICPC模板
 ---

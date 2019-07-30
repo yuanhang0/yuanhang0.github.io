@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 友链和留言
+title: Useful Links and Comments
 ---
 
 - [Online Equation Editor](https://www.codecogs.com/latex/eqneditor.php)
@@ -10,4 +10,7 @@ title: 友链和留言
 
 
 - [My Favorite Anime](https://www.imdb.com/title/tt1298820/?ref_=tt_rec_tt)
+
+
+
 {% include disqus.html %}
