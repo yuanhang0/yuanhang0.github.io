@@ -6,27 +6,37 @@ tag: [Statistics]
 date: 2019-07-30
 comments: true
 ---
-For an additive error model \$$ Y = f(X) + \varepsilon, \quad \Var(\varepsilon) = \sigma^2, $$
+For an additive error model \$$ y = f(X) + \varepsilon, \quad \Var(\varepsilon) = \sigma^2, $$
 
-the effective degrees-of-freedom is defined as 
+the *effective degrees-of-freedom* is defined as
 $$
 df(\hat{Y}) = \frac{1}{\sigma^2} \sum_{i=1}^{N} \Cov(\hat{y}_i, y_i).
 $$
 
-linear regression, the least square estimate of $\beta$ is given by
+In a linear fitted method where we can write $\hat{Y} = S Y$ for some $n\times n$ matrix $S$, the above effective degrees-of-freedom can be calculated as follows:
 
 $$
-\hat{\beta}^{\text{LS}}$ = \argmin\limits_{\beta} \|Y-X\beta\|^2 .
+df(\hat{Y}) = \frac{1}{\sigma^2} \operatorname{Tr}\( \Cov(\hat{Y}, Y) \) = \frac{1}{\sigma^2} \operatorname{Tr}\( \Cov(SY, Y) \)
+=  \frac{1}{\sigma^2} \operatorname{Tr}\( S \Var(Y) \) = \operatorname{Tr}(S).
 $$
+We see that it only depends on the diagonal elements of $S$.
+
+The linear regression with ordinary least square estimate is an example of the linear fitted method. As we seen in the previous post, the least square estimate of $\beta$ is given by
 
 $$
-\hat{\beta} = (X'X)^{-1}X'Y.
+\hat{\beta}^{\text{LS}} = \argmin\limits_{\beta} \|Y-X\beta\|^2 = (X'X)^{-1}X'Y,
 $$
 
-The corresponding fitted values are
+and the corresponding fitted value $\hat{Y}$ is
 
 $$
 \hat Y = X\hat\beta = X(X'X)^{-1}X' Y = H Y,
 $$
+where $H = X(X'X)^{-1}X'$ is the hat matrix of size $n\times n$.
 
-where $H = X(X'X)^{-1}X'$ is of size $n\times n$ and is called the *hat matrix*.
+Thus, we see that the effective degrees-of-freedom for this method is given by
+
+$$
+df(\hat{Y}) = \operatorname{Tr}(H) = p+1,
+$$
+which is exactly the same as the number of parameters in $\beta$, i.e., the lenght of $\beta$.
