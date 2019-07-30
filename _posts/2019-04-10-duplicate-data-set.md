@@ -34,11 +34,12 @@ $$
 which implies that $\hat\beta$ **does not change**.
 
 Recall the formula for $R^2$ is
+
 $$
 R^2 = \frac{ \| \hat Y -\bar Y \| ^2}{ \|  Y -\bar Y \| ^2 }.
 $$
 
-We note that
+Also, we note that
 
 $$
 \bar{Y}_{\text{new}} =\begin{pmatrix}
