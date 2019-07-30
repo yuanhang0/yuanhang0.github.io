@@ -13,16 +13,4 @@
       dataType: "script",
       cache: true
     });
-      $(window).on("load", function () {
-        renderMathInElement(document.body,
-          {
-            delimiters: [
-              {left: "$$", right: "$$", displayMode: true},
-              {left: "\\[", right: "\\]", displayMode: true},
-              {left: "$", right: "$", displayMode: false},
-              {left: "\\(", right: "\\)", displayMode: false}
-            ]
-          }
-        );
-      });
   {% endif %}
