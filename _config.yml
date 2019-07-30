@@ -63,13 +63,13 @@ head: # 删改前确定知道自己在做什么
   - key: rel
     value: apple-touch-icon-precomposed
   - key: href
-    value: /public/image/2019-03-31-3.jpg
+    value: /public/image/avatar-icon.png
 - tag: link # 小图标，同上
   var:
   - key: rel
     value: 'shortcut icon'
   - key: href
-    value: /public/image/2019-03-31-3.jpg
+    value: /public/image/avatar-icon.png
 - tag: link # 下面是博客的css，有些插件的css是单独在插件里引用的，假如需要自己的css可以仿照去加在后面。无脑cdn加速了。
   var:
   - key: rel
@@ -152,7 +152,7 @@ katex: # KaTeX
 sidebar:
   avatar: # 侧边栏显示的头像
     enable: true
-    img: /public/image/avatar-icon.png # 头像的地址
+    img: avatar-icon.png # 头像的地址
     info: <br>Ph.D. Candidate in Statistics<br> # 头像背后的信息
   description:
   social:
