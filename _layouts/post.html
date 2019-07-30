@@ -36,7 +36,7 @@ layout: page
           {% if site.link-tags %}
             {% for tag in page.tags %}
               {% capture tag_name %}{{ tag }}{% endcapture %}
-              <a href="{{site.baseurl}}/tags">{{ tag }}</a>
+              <a href="{{site.baseurl}}/tags"></a>
               {% unless forloop.last %}&nbsp;{% endunless %}
             {% endfor %}
             {% else %}
