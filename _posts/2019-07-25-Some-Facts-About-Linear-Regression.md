@@ -7,8 +7,7 @@ date: 2019-07-25
 comments: true
 ---
 In linear regression, we make the following model assumptions:
-
-$$
+\$$
 Y=X\beta+\varepsilon,~\varepsilon\sim N(\boldsymbol{0},\sigma^2 I_n),
 $$
 
