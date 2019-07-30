@@ -152,7 +152,7 @@ katex: # KaTeX
 sidebar:
   avatar: # 侧边栏显示的头像
     enable: true
-    img: avatar-icon.png # 头像的地址
+    img: /public/image/avatar-icon.png # 头像的地址
     info: <br>Ph.D. Candidate in Statistics<br> # 头像背后的信息
   description:
   social:
