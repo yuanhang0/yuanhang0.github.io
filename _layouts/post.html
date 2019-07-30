@@ -31,12 +31,17 @@ layout: page
   {% endif %}
 
   {% if page.tags.size > 0 %}
-    <span>[
-      {% for tag in page.tags %}
-        {% capture tag_name %}{{ tag }}{% endcapture %}
-        <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
-      {% endfor %}
-    ]</span>
+        <div class="blog-tags">
+          Tags:
+          {% if site.link-tags %}
+            {% for tag in page.tags %}
+              {% capture tag_name %}{{ tag }}{% endcapture %}
+              <a href="{{ page.url }}{{ tags.url }}</a>
+            {% endfor %}
+            {% else %}
+              {{ page.tags | join: ", " }}
+          {% endif %}
+        </div>
   {% endif %}
 
   <div class="post-content">
