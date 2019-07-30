@@ -257,6 +257,8 @@ gtag: "UA-137049032-1" # google analystics
 
 disqus: "ibuki" # Disqus for comments
 
+markdown: kramdown
+
 page404:
   search_children: # 腾讯公益
     enable: flase
