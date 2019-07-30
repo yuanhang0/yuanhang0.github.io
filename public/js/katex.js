@@ -18,10 +18,10 @@ $.ajax({
     renderMathInElement(document.body,
       {
         delimiters: [
-          {left: "$$", right: "$$", display: true},
-          {left: "\\[", right: "\\]", display: true},
-          {left: "$", right: "$", display: false},
-          {left: "\\(", right: "\\)", display: false}
+          {left: "$$", right: "$$", displayMode: true},
+          {left: "\\[", right: "\\]", displayMode: true},
+          {left: "$", right: "$", displayMode: false},
+          {left: "\\(", right: "\\)", displayMode: false}
         ]
       }
     );
