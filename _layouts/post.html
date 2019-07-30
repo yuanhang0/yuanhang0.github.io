@@ -36,7 +36,7 @@ layout: page
           {% if site.link-tags %}
             {% for tag in page.tags %}
               {% capture tag_name %}{{ tag }}{% endcapture %}
-              <a href="{{ page.url }}{{ tags }}</a>
+              <a href="#{{ tag | slugify }}"> {{ tag }} </a>
             {% endfor %}
             {% else %}
               {{ page.tags | join: ", " }}
