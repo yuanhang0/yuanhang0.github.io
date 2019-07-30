@@ -456,7 +456,7 @@ a.pagination-item:hover {
 
 /* Orange */
 .theme-base-09 .sidebar,
-.theme-base-09 .sidebar-toggle:disabled,
+.theme-base-09 .sidebar-toggle:active,
 .theme-base-09 #sidebar-checkbox:checked ~ .sidebar-toggle {
   background-color: #d28445;
 }
