@@ -16,7 +16,7 @@ $$
 \hat{\beta} = (X'X)^{-1}X'Y.
 $$
 
-The corresponing fitted values are
+The corresponding fitted values are
 
 $$
 \hat Y = X\hat\beta = X(X'X)^{-1}X' Y = H Y,
