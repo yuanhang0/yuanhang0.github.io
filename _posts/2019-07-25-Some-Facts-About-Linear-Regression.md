@@ -12,7 +12,9 @@ where $Y$ is a vector of length $n$, $X$ is a matrix of size $n\times (p+1)$ and
 
 The least square estimate of $\beta$ is the one that minimizes $$ \|Y-X\beta\|^2 $$. In the case of $\operatorname{rank}(X) = p+1$, we can find it explicitly:
 
-$$\hat{\beta} = (X'X)^{-1}X'Y.$$
+$$
+\hat{\beta} = (X'X)^{-1}X'Y.
+$$
 
 The corresponding fitted values are
 
