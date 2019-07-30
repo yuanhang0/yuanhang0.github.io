@@ -47,13 +47,13 @@ which is exactly the same as the number of parameters in $\beta$, i.e., the leng
 The *ridge regression* is also an example of the linear fitted method. The ridge regression estimates $\beta$ by
 
 $$
-\hat{\beta}^{\text{Ridge}} = \operatorname*{argmin}\limits_{\beta} \|Y-X\beta\|^2+\lambda \|\beta \|^2 = (X'X+\lambda I_n)^{-1}X' Y,
+\hat{\beta}^{\text{ridge}} = \operatorname*{argmin}\limits_{\beta} \|Y-X\beta\|^2+\lambda \|\beta \|^2 = (X'X+\lambda I_n)^{-1}X' Y,
 $$
 
-for some constant $\lambda>0$. The corresponding fitted value $\hat{Y}^{\text{Ridge}} $ is
+for some constant $\lambda>0$. The corresponding fitted value $\hat{Y}^{\text{ridge}} $ is
 
 $$
-\hat{ Y }^{\text{Ridge}} = X\hat{\beta}^{\text{Ridge}} = X(X'X+\lambda I_n)^{-1}X' Y = H_{\lambda} Y,
+\hat{ Y }^{\text{ridge}} = X\hat{\beta}^{\text{ridge}} = X(X'X+\lambda I_n)^{-1}X' Y = H_{\lambda} Y,
 $$
 where $H_{\lambda} = X(X'X+\lambda I_n)^{-1}X'$.
 
@@ -74,7 +74,7 @@ which gives:
 
 $$
 \begin{aligned}
-H_{\lambda} &= X(X'X+\lambda I_n)^{-1}X' = UDV'\left(VD^2V'+\lambda I_n \right)^-1 VDU' = UDV'\left(V(D^2 +\lambda I_n)V'\right)^-1 VDU'\\
+H_{\lambda} &= X(X'X+\lambda I_n)^{-1}X' = UDV'\left(VD^2V'+\lambda I_n \right)^{-1} VDU' = UDV'\left(V(D^2 +\lambda I_n)V'\right)^{-1} VDU'\\
             &=  UD\left(D^2 +\lambda I_n\right)^-1 DU'.
 \end{aligned}
 $$
@@ -83,8 +83,8 @@ Hence,
 
 $$
 \begin{aligned}
-\text{df}(\hat{Y}^{\text{LS}}) & = \operatorname{Tr}(H_{\lambda}) = \operatorname{Tr}(UD\left(D^2 +\lambda I_n\right)^-1 DU')\\
-& = \operatorname{Tr}(D\left(D^2 +\lambda I_n\right)^-1 DU'U) = \operatorname{Tr}(D\left(D^2 +\lambda I_n\right)^-1 D) \\
+\text{df}(\hat{Y}^{\text{ridge}}) & = \operatorname{Tr}(H_{\lambda}) = \operatorname{Tr}(UD\left(D^2 +\lambda I_n\right)^{-1} DU')\\
+& = \operatorname{Tr}(D\left(D^2 +\lambda I_n\right)^{-1} DU'U) = \operatorname{Tr}(D\left(D^2 +\lambda I_n\right)^{-1} D) \\
 & = \sum_{i=1}{N} \frac{d_i^2}{d_i^2+\lambda} < p.
 \end{aligned}
 $$
