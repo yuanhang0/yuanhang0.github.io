@@ -31,13 +31,13 @@ layout: page
   {% endif %}
 
   <div class="post-tags">
-    {% if post %}
+    Tags:{% if post %}
       {% assign tags = post.tags %}
     {% else %}
       {% assign tags = page.tags %}
     {% endif %}
     {% for tag in tags %}
-    <a href="{{site.baseurl}}/tags/">{{tag}}</a>
+    <a href="{{site.baseurl}}/tags">{{tag}}</a>
     {% unless forloop.last %}&nbsp;{% endunless %}
     {% endfor %}
   </div>
