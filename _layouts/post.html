@@ -30,20 +30,17 @@ layout: page
   {% endif %}
   {% endif %}
 
-  {% if page.tags.size > 0 %}
-        <div class="post-tags">
-          Tags:
-          {% if site.link-tags %}
-            {% for tag in page.tags %}
-              {% capture tag_name %}{{ tag }}{% endcapture %}
-              <a href="{{site.baseurl}}/tags"></a>
-              {% unless forloop.last %}&nbsp;{% endunless %}
-            {% endfor %}
-            {% else %}
-              {{ page.tags | join: ", " }}
-          {% endif %}
-        </div>
-  {% endif %}
+  <div class="post-tags">
+    {% if post %}
+      {% assign tags = post.tags %}
+    {% else %}
+      {% assign tags = page.tags %}
+    {% endif %}
+    {% for tag in tags %}
+    <a href="{{site.baseurl}}/tags/#{{tag|slugize}}">{{tag}}</a>
+    {% unless forloop.last %}&nbsp;{% endunless %}
+    {% endfor %}
+  </div>
 
   <div class="post-content">
     {{ content }}
