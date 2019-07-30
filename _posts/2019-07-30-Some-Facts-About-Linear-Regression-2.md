@@ -50,17 +50,18 @@ $$
 \hat{\beta}^{\text{ridge}} = \operatorname*{argmin}\limits_{\beta} \|Y-X\beta\|^2+\lambda \|\beta \|^2 = (X'X+\lambda I_n)^{-1}X' Y,
 $$
 
-for some constant $\lambda>0$. The corresponding fitted value $\hat{Y}^{\text{ridge}} $ is
+for some constant $\lambda>0$. The corresponding fitted value $\hat{Y}^{\text{ridge}}$ is
 
 $$
 \hat{ Y }^{\text{ridge}} = X\hat{\beta}^{\text{ridge}} = X(X'X+\lambda I_n)^{-1}X' Y = H_{\lambda} Y,
 $$
+
 where $H_{\lambda} = X(X'X+\lambda I_n)^{-1}X'$.
 
 Therefore, the effective degrees-of-freedom for ridge regression is given by
 
 $$
-\text{df}(\hat{Y}^{\text{LS}}) = \operatorname{Tr}(H_{\lambda}).
+\text{df}(\hat{Y}^{\text{ridge}}) = \operatorname{Tr}(H_{\lambda}).
 $$
 
 It remains to determine $\operatorname{Tr}(H_{\lambda})$. For simplicity, let's assume that the input $X$ is centered. Consider the SVD of $X$: $ X = UDV',$ where $U$ and $V$ are $N\times p$ and $p\times p$ orthogonal matrices, respectively, and $D$ is a $p\times p$ diagonal matrix with non-increasing singular values $d_1 \ge d_2 \ge \cdots \ge d_p \ge 0$.
@@ -75,7 +76,7 @@ which gives:
 $$
 \begin{aligned}
 H_{\lambda} &= X(X'X+\lambda I_n)^{-1}X' = UDV'\left(VD^2V'+\lambda I_n \right)^{-1} VDU' = UDV'\left(V(D^2 +\lambda I_n)V'\right)^{-1} VDU'\\
-            &=  UD\left(D^2 +\lambda I_n\right)^-1 DU'.
+            &=  UD\left(D^2 +\lambda I_n\right)^{-1} DU'.
 \end{aligned}
 $$
 

@@ -42,9 +42,16 @@ layout: page
     {% endfor %}
   </div>
 
+  {% include mathjax.html %}
+
   <div class="post-content">
     {{ content }}
   </div>
+
+  {% include disqus.html %}
+
+
+
   {% if site.post.related.enable %}
   <div class="related">
     {{ site.post.related.title }}
@@ -79,6 +86,7 @@ layout: page
     </div>
   </div>
   {% endif %}
-  {% include disqus.html %}
-  {% include mathjax.html %}
+
+
+
 </div>
