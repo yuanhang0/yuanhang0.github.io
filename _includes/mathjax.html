@@ -1,17 +1,16 @@
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
-    TeX: {
-        Macros: {
-          Var: "{\\operatorname{Var}}",
-          Cov: "{\\operatorname{Cov}}",
-          E: "{\\operatorname{E}}",
-        }
-    }
     tex2jax: {
       skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
       inlineMath: [['$','$']],
       displayMath: [ ['$$','$$'] ],
       processEscapes: true,
+    },
+    TeX: {
+      Macros: {
+        RR: '{\\bf R}',
+        bold: ['{\\bf #1}', 1]
+      }
     }
   });
 </script>
