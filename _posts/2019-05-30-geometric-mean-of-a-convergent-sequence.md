@@ -2,7 +2,7 @@
 layout: post
 title: Deriving Some Limits Via the Geometric Mean
 # subtitle: Each post also has a subtitle
-categories: Calculus
+showtag: Calculus
 date: 2019-05-30
 comments: true
 ---
