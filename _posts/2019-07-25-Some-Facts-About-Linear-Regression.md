@@ -7,7 +7,11 @@ date: 2019-07-25
 comments: true
 ---
 In linear regression, we make the following model assumptions:
-$$Y=X\beta+\varepsilon,~\varepsilon\sim N(\boldsymbol{0},\sigma^2 I_n),$$
+
+$$
+Y=X\beta+\varepsilon,~\varepsilon\sim N(\boldsymbol{0},\sigma^2 I_n),
+$$
+
 where $Y$ is a vector of length $n$, $X$ is a matrix of size $n\times (p+1)$ and $\beta$ is a vector of length $(p+1)$.
 
 The least square estimate of $\beta$ is the one that minimizes $$ \|Y-X\beta\|^2 $$. In the case of $\operatorname{rank}(X) = p+1$, we can find it explicitly:
