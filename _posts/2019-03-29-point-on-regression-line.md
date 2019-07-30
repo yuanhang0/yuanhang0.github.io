@@ -2,9 +2,8 @@
 layout: post
 title: Removal of a Data Point on the Regression Line
 # subtitle: Each post also has a subtitle
-gh-repo: yuanhang0/yuanhang0.github.io
-gh-badge: [star, follow]
-tags: [statistics]
+categories: Statistics
+date: 2019-03-29
 comments: true
 ---
 Suppose the data we have is $(X_1,Y_1),...,(X_n,Y_n)$ and we fit it to the linear regression model: $Y=X\beta+\varepsilon,~\varepsilon\sim N(\boldsymbol{0},I_n)$. Assume that the i-th observation $(X_i, Y_i)$ lie exactly on the fitted line. Would $\hat\beta$ change if we delete $(X_i, Y_i)$ and perform linear regression on the rest $n-1$ observations?

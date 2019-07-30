@@ -2,9 +2,8 @@
 layout: post
 title: Limiting Distribution of the First 3 Coordinates of a Uniform Distribution on a Sphere
 # subtitle: Each post also has a subtitle
-gh-repo: yuanhang0/yuanhang0.github.io
-gh-badge: [star, follow]
-tags: [probability]
+categories: Probability
+date: 2019-04-16
 comments: true
 ---
 Let $(X_1, \cdots, X_n)$ be a random vector uniformly distributed on the sphere

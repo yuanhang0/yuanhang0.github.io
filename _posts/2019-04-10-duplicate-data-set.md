@@ -2,16 +2,15 @@
 layout: post
 title: Duplication of a Data Set
 # subtitle: Each post also has a subtitle
-gh-repo: yuanhang0/yuanhang0.github.io
-gh-badge: [star, follow]
-tags: [statistics]
+categories: Statistics
+date: 2019-04-10
 comments: true
 ---
 Suppose the data we have is $(X_1,Y_1),...,(X_n,Y_n)$ and we fit it to the linear regression model: $Y=X\beta+\varepsilon,~\varepsilon\sim N(\boldsymbol{0},I_n)$. Now we make a duplicate of each data point and get a new data set of size $2n$. How would $\hat\beta$, $R^2$ and adjusted $R^2$ change if we fit the linear model with this new data set?
 
 _Solution:_
 
-We consider the dupilcates are at the positions $n+1$ to $2n$. Then we have 
+We consider the dupilcates are at the positions $n+1$ to $2n$. Then we have
 
 $$
 X_{\text{new}} = \begin{pmatrix}
@@ -34,7 +33,7 @@ $$
 
 which implies that $\hat\beta$ **does not change**.
 
-Recall the formula for $R^2$ is $R^2 = \frac{\|\hat Y -\bar Y \|^2}{\|  Y -\bar Y \|^2}$. We note that 
+Recall the formula for $R^2$ is $R^2 = \frac{\|\hat Y -\bar Y \|^2}{\|  Y -\bar Y \|^2}$. We note that
 
 $$
 \bar{Y}_{\text{new}} =\begin{pmatrix}

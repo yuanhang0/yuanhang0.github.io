@@ -2,9 +2,8 @@
 layout: post
 title: Deriving Some Limits Via the Geometric Mean
 # subtitle: Each post also has a subtitle
-gh-repo: yuanhang0/yuanhang0.github.io
-gh-badge: [star, follow]
-tags: [analysis]
+categories: Calculus
+date: 2019-05-30
 comments: true
 ---
 It's been a while since my last update. A few weeks ago, my colleague proposed a question regarding the limit of $\frac{ n }{\sqrt[n]{n!}}$ when teaching calculus. I found it interesting to make use of the lemma below to derive some limts:
