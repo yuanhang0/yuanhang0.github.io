@@ -31,13 +31,71 @@ $$
 and the corresponding fitted value $\hat{Y}$ is
 
 $$
-\hat Y = X\hat\beta = X(X'X)^{-1}X' Y = H Y,
+\hat{Y}^{\text{LS}} = X\hat{\beta}^{\text{LS}} = X(X'X)^{-1}X' Y = H Y,
 $$
+
 where $H = X(X'X)^{-1}X'$ is the hat matrix of size $n\times n$.
 
 Thus, we see that the effective degrees-of-freedom for this method is given by
 
 $$
-\text{df}(\hat{Y}) = \operatorname{Tr}(H) = p+1,
+\text{df}(\hat{Y}^{\text{LS}}) = \operatorname{Tr}(H) = p+1,
 $$
+
 which is exactly the same as the number of parameters in $\beta$, i.e., the length of $\beta$.
+
+The *ridge regression* is also an example of the linear fitted method. The ridge regression estimates $\beta$ by
+
+$$
+\hat{\beta}^{\text{Ridge}} = \operatorname*{argmin}\limits_{\beta} \|Y-X\beta\|^2+\lambda \|\beta \|^2 = (X'X+\lambda I_n)^{-1}X' Y,
+$$
+
+for some constant $\lambda>0$. The corresponding fitted value $\hat{Y}^{\text{Ridge}} $ is
+
+$$
+\hat{ Y }^{\text{Ridge}} = X\hat{\beta}^{\text{Ridge}} = X(X'X+\lambda I_n)^{-1}X' Y = H_{\lambda} Y,
+$$
+where $H_{\lambda} = X(X'X+\lambda I_n)^{-1}X'$.
+
+Therefore, the effective degrees-of-freedom for ridge regression is given by
+
+$$
+\text{df}(\hat{Y}^{\text{LS}}) = \operatorname{Tr}(H_{\lambda}).
+$$
+
+It remains to determine $\operatorname{Tr}(H_{\lambda})$. For simplicity, let's assume that the input $X$ is centered. Consider the SVD of $X$: $ X = UDV',$ where $U$ and $V$ are $N\times p$ and $p\times p$ orthogonal matrices, respectively, and $D$ is a $p\times p$ diagonal matrix with non-increasing singular values $d_1 \ge d_2 \ge \cdots \ge d_p \ge 0$.
+Then it follows that
+
+$$
+ X'X = VDU'UDV' = VD^2V',
+$$
+
+which gives:
+
+$$
+\begin{aligned}
+H_{\lambda} &= X(X'X+\lambda I_n)^{-1}X' = UDV'\left(VD^2V'+\lambda I_n \right)^-1 VDU' = UDV'\left(V(D^2 +\lambda I_n)V'\right)^-1 VDU'\\
+            &=  UD\left(D^2 +\lambda I_n\right)^-1 DU'.
+\end{aligned}
+$$
+
+Hence,
+
+$$
+\begin{aligned}
+\text{df}(\hat{Y}^{\text{LS}}) & = \operatorname{Tr}(H_{\lambda}) = \operatorname{Tr}(UD\left(D^2 +\lambda I_n\right)^-1 DU')\\
+& = \operatorname{Tr}(D\left(D^2 +\lambda I_n\right)^-1 DU'U) = \operatorname{Tr}(D\left(D^2 +\lambda I_n\right)^-1 D) \\
+& = \sum_{i=1}{N} \frac{d_i^2}{d_i^2+\lambda} < p.
+\end{aligned}
+$$
+
+We see that as a shrinkage method, the effective degrees-of-freedom in ridge regression is smaller than $p$. To understand this, we may think of an equivalent formulation of the ridge regression:
+
+$$
+\begin{aligned}
+\operatorname*{min}\limits_{\beta} \|Y-X\beta\|^2+\lambda \|\beta \|^2  \quad \Leftrightarrow \quad &\operatorname*{min}\limits_{\beta} &\|Y-X\beta\|^2  \\
+                                                                                        & \text{s.t.} & \|\beta \|^2 \le t
+\end{aligned}
+$$
+
+This now makes more intuitive sense: instead of minimizing over all $\beta \in \mathbb{R^n}$, we restrict our choices to those $\beta$ with small $l_2$ norms. Thus, the effective degrees-of-freedom should be smaller compared to the unconstrainted case, i.e., the least square estimate.
