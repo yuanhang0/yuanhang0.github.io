@@ -25,7 +25,7 @@ We see that it only depends on the diagonal elements of $S$.
 The linear regression with ordinary least square estimate is an example of the linear fitted method. As we seen in the previous post, the least square estimate of $\beta$ is given by
 
 $$
-\hat{\beta}^{\text{LS}} = \operatorname{argmin} \limits_{\beta} \|Y-X\beta\|^2 = (X'X)^{-1}X'Y,
+\hat{\beta}^{\mbox{LS}} = \operatorname{argmin}\limits_{\beta} \|Y-X\beta\|^2 = (X'X)^{-1}X'Y,
 $$
 
 and the corresponding fitted value $\hat{Y}$ is
