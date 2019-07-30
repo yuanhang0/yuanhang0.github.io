@@ -103,4 +103,4 @@ $$
 \end{aligned}
 $$
 
-This now makes more intuitive sense: instead of minimizing over all $\beta \in \mathbb{R^n}$, we restrict our choices to those $\beta$ with small $\ell^2-$norm. Thus, the effective degrees-of-freedom should be smaller compared to the unconstrained case, i.e., the least square estimate.
+This now makes more intuitive sense: instead of minimizing over all $\beta \in \mathbb{R^n}$, we restrict our choices to those $\beta$ with small $\ell^2$-norm. Thus, the effective degrees-of-freedom should be smaller compared to the unconstrained case, i.e., the least square estimate.
