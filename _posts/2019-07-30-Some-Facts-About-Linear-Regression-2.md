@@ -14,7 +14,7 @@ $$
 \text{df}(\hat{Y}) = \frac{1}{\sigma^2} \sum_{i=1}^{N} \Cov(\hat{y}_i, y_i).
 $$
 
-In a linear fitted method where we can write $\hat{Y} = S Y$ for some $n\times n$ matrix $S$, the above effective degrees-of-freedom can be calculated as follows:
+In a linear fitted method, we can write $\hat{Y} = S Y$ for some $n\times n$ matrix $S$ that only depends on $X$. Then the above effective degrees-of-freedom can be calculated as follows:
 
 $$
 \text{df}(\hat{Y}) = \frac{1}{\sigma^2} \operatorname{Tr}\left( \Cov(\hat{Y}, Y) \right) = \frac{1}{\sigma^2} \operatorname{Tr}\left( \Cov(SY, Y) \right)
