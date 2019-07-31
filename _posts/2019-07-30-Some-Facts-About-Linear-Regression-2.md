@@ -6,7 +6,11 @@ tag: [Statistics]
 date: 2019-07-30
 comments: true
 ---
-For an additive error model \$$ Y = f(X) + \varepsilon, \quad \Var(\varepsilon) = \sigma^2 I_n, $$
+For an additive error model
+
+$$
+ Y = f(X) + \varepsilon, \quad \Var(\varepsilon) = \sigma^2 I_n,
+$$
 
 the *effective degrees-of-freedom* is defined as
 
@@ -65,7 +69,7 @@ $$
 \text{df}(\hat{Y}^{\text{ridge}}) = \operatorname{Tr}(H_{\lambda}).
 $$
 
-It remains to determine $\operatorname{Tr}(H_{\lambda})$. For simplicity, let's assume that the input $X$ is centered. Consider the SVD of $X$: $ X = UDV',$ where $U$ and $V$ are $N\times p$ and $p\times p$ orthogonal matrices, respectively, and $D$ is a $p\times p$ diagonal matrix with non-increasing singular values $d_1 \ge d_2 \ge \cdots \ge d_p \ge 0$.
+It remains to determine $\operatorname{Tr}(H_{\lambda})$. For simplicity, let's assume that the input $X$ is centered. Consider the SVD of $X$: $X = UDV',$ where $U$ and $V$ are $N\times p$ and $p\times p$ orthogonal matrices, respectively, and $D$ is a $p\times p$ diagonal matrix with non-increasing singular values $d_1 \ge d_2 \ge \cdots \ge d_p \ge 0$.
 Then it follows that
 
 $$
