@@ -58,7 +58,7 @@ $$
 
 > What is the number of paths that start at 0 and end at 0 at step $2n$ and do not revisit 0 for intermediate steps?
 
-Again, we try to make use of our observations above. Note that since we do not want to revisit 0, the first step we take must be '+1' and the last step we take must be '-1'. Thus, we only need to count the total number of paths of length $(2n-2)$ from 1 to 1 and do not intersect the $x$-axis., i.e., $N_{2n-2}^0(1,1)$. Therefore, we follow similar calculations as above and obtain:
+Again, we try to make use of our observations above. Since we do not want to revisit 0, we can first restrict our choices to all paths above the $x$-axis and the final answer should be twice of the number of such paths. Then, for any such path above the $x$-axis, the first step it takes must be '+1' and the last step it takes must be '-1'. Thus, we only need to count the total number of paths of length $(2n-2)$ from 1 to 1 and do not intersect the $x$-axis., i.e., $N_{2n-2}^0(1,1)$. Therefore, we follow similar calculations as above and obtain:
 
 $$
 \begin{aligned}
@@ -67,3 +67,5 @@ N_{2n-2}^0(1,1) & = N_{2n-2}(1,1) - N_{2n-2}^1(1,1)\\
 & = {2n-2 \choose n-1} -  {2n-2 \choose n} = \frac{(2n-2)!}{n!(n-1)!}.
 \end{aligned}
 $$
+
+Thus, the number of paths that start at 0 and end at 0 at step $2n$ and do not revisit 0 for intermediate steps is $\frac{2(2n-2)!}{n!(n-1)!}.$
