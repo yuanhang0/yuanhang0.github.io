@@ -56,7 +56,7 @@ $$
 & = {n \choose 1 } \left|A_1\right| - {n \choose 2 } \left|A_1\cap A_2\right| + \cdots. \end{aligned}
 $$
 
-Note that for computing the size of
+Note that for computing the size of $A_1$
 
 $$
  |A_1| = {x-6-1 \choose n-1}.
