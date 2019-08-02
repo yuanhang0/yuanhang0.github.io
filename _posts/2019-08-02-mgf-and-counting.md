@@ -2,7 +2,7 @@
 layout: post
 title: Inclusion-Exclusion Principle
 # subtitle: Each post also has a subtitle
-tag: [Probability, Combinatorics]
+tag: [Probability], [Combinatorics]
 date: 2019-08-02
 comments: true
 ---
