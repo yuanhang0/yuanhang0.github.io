@@ -5,7 +5,7 @@ showtag:
 #- ICPC模板
 ---
 ## 近期 Recent
-
+{% include mathjax.html %}
 {% for post in site.posts limit:5 %}
 
 - [{{ post.title }}]({{ post.url }}), *{{ post.date | date_to_string }}*
