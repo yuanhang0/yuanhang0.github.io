@@ -231,10 +231,10 @@ post:
     date: true
     wordcount:
       enable: true
-      unit:  words
+      unit: ' words'
     readtime:
       enable: true
-      unit:  minutes
+      unit: minutes
       divided_by: 300
     visitor: # 需要开启valine的visitor选项使之开始计数; 可能会和busuanzi统计的有出入
       enable: false
