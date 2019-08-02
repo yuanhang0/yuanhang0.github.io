@@ -53,8 +53,8 @@ Let $A_i$ be the event that $X_i$ is greater than 6. Then the cardinality of the
 
 $$
 \begin{aligned}
-\left|\bigcup_{i=1}^{n} A_{i}\right| & = \sum_{i=1}^{n}\left|A_{i}\right|-\sum_{1 \leqslant i<j \leqslant n}\left|A_{i} \cap A_{j}\right|+\sum_{1 \leqslant i<j<k \leqslant n}\left|A_{i} \cap A_{j} \cap A_{k}\right|-\cdots+(-1)^{n-1}\left|A_{1} \cap \cdots \cap A_{n}\right| \\\
-& = {n \choose 1 } |A_1| - {n \choose 2 } |A_1\cap A_2| + \cdots.
+\left|\bigcup_{i=1}^{n} A_{i}\right| & = \sum_{i=1}^{n}\left|A_{i}\right|-\sum_{1 \leqslant i<j \leqslant n}\left|A_{i} \cap A_{j}\right|+\sum_{1 \leqslant i<j<k \leqslant n}\left|A_{i} \cap A_{j} \cap A_{k}\right|-\cdots+(-1)^{n-1}\left|A_{1} \cap \cdots \cap A_{n}\right| \\
+& = {n \choose 1 } \left|A_1\right| - {n \choose 2 } \left|A_1\cap A_2\right| + \cdots.
 \end{aligned}
 $$
 
