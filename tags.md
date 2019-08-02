@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 标签
+title: 标签 Tags
 ---
 {% for tag in site.tags %}
 

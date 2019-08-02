@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 归档
+title: 归档 Archive
 ---
 {% for post in site.posts %}
 
