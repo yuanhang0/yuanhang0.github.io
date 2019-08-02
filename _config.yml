@@ -176,15 +176,15 @@ sidebar:
 #    href: //vjudge.net/user/WuK
 #    class: 'fa fa-smile-o fa-fw'
   nav:
-  - title: '<span class="fa fa-home fa-fw"></span>&nbsp;首页'
+  - title: '<span class="fa fa-home fa-fw"></span>&nbsp;首页 Front Page'
     href: /
-  - title: '<span class="fa fa-info-circle fa-fw"></span>&nbsp;关于'
+  - title: '<span class="fa fa-info-circle fa-fw"></span>&nbsp;关于 About'
     href: /about
-  - title: '<span class="fa fa-comments-o fa-fw"></span>&nbsp;友链和留言'
+  - title: '<span class="fa fa-comments-o fa-fw"></span>&nbsp;链接和评论 Useful links and comments'
     href: /comments
-  - title: '<span class="fa fa-tags fa-fw"></span>&nbsp;标签'
+  - title: '<span class="fa fa-tags fa-fw"></span>&nbsp;标签 Tags'
     href: /tags
-  - title: '<span class="fa fa-archive fa-fw"></span>&nbsp;归档'
+  - title: '<span class="fa fa-archive fa-fw"></span>&nbsp;归档 Archive'
     href: /archive
 
 simple-jekyll-search:
@@ -231,13 +231,13 @@ post:
     date: true
     wordcount:
       enable: true
-      unit: 字
+      unit: words
     readtime:
       enable: true
-      unit: 分
+      unit: minutes
       divided_by: 300
     visitor: # 需要开启valine的visitor选项使之开始计数; 可能会和busuanzi统计的有出入
-      enable: true
+      enable: false
       unit: 次
     copyright: '<span class="fa fa-creative-commons"></span>&nbsp;<a rel="license" href="//creativecommons.org/licenses/by-sa/4.0/deed.zh">BY-SA 4.0</a>（除特别声明或转载文章外）'
   related:
