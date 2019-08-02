@@ -56,7 +56,7 @@ $$\begin{aligned}
 & = {n \choose 1 } \left|A_1\right| - {n \choose 2 } \left|A_1\cap A_2\right| + \cdots.
 \end{aligned}$$
 
-Note that for computing $\left|A_1\right|,$ we need to count the number of partitions such that $X_1>6.$ Since $X_1$ now takes values $7, 8, 9, \cdots,$ we may simply subtract 6 from it then count. Thus, the quantity $\left|A_1\right|$ should be the same as the number of $n$-integer partitions of $(x-12)$ with no constraint. Thus,
+Note that for computing $\left|A_1\right|,$
 
 $$
  |A_1| = {x-6-1 \choose n-1}.
