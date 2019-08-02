@@ -1,10 +1,10 @@
 ---
 layout: page
-title: 
+title:
 showtag:
 #- ICPC模板
 ---
-## 近期
+## 近期 Recent
 
 {% for post in site.posts limit:5 %}
 
@@ -18,7 +18,7 @@ showtag:
 
 {% endfor %}
 
-- [更多…](/archive)
+- [更多 More…](/archive)
 
 {% for tag in page.showtag %}
 
