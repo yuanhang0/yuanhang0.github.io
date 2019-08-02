@@ -58,7 +58,7 @@ $$
 \end{aligned}
 $$
 
-Note that for computing $|A_1|$
+Note that for computing the size of $A_1$
 
 $$
  |A_1| = {x-6-1 \choose n-1}.
