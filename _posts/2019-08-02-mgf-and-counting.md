@@ -52,13 +52,11 @@ Now, among those partitions, we need to exclude the ones with at least one $X_i>
 Let $A_i$ be the event that $X_i$ is greater than 6. Then the cardinality of the event that at least one $X_i>6$ can be computed by the inclusion-exclusion principle as follows:
 
 $$
-\begin{aligned}
-\left| \bigcup_{i=1}^{n} A_{i} \right| &= \sum_{i=1}^{n}\left| A_{i}\right| -\sum_{1 \leq  i<j \leq  n}\left|A_{i} \cap A_{j}\right|+\sum_{1 \leq  i<j<k \leq  n}\left|A_{i} \cap A_{j} \cap A_{k}\right|-\cdots+(-1)^{n-1}\left|A_{1} \cap \cdots \cap A_{n}\right| \\
-& = {n \choose 1 } \left|A_1\right| - {n \choose 2 } \left|A_1\cap A_2\right| + \cdots.
-\end{aligned}
+\begin{aligned} \left| \bigcup_{i=1}^{n} A_{i} \right| &= \sum_{i=1}^{n}\left| A_{i}\right| -\sum_{1 \leq  i<j \leq  n}\left|A_{i} \cap A_{j}\right|+\sum_{1 \leq  i<j<k \leq  n}\left|A_{i} \cap A_{j} \cap A_{k}\right|-\cdots+(-1)^{n-1}\left|A_{1} \cap \cdots \cap A_{n}\right| \\
+& = {n \choose 1 } \left|A_1\right| - {n \choose 2 } \left|A_1\cap A_2\right| + \cdots. \end{aligned}
 $$
 
-Note that for computing the size of $A_1$, we need to count the number of partitions such that $X_1>6$. Since $X_1$ now takes values $7, 8, 9, \cdots$, we may simply subtract 6 from it then count. Thus, the quantity $\left|A_1\right|$ should be the same as the number of $n$-integer partitions of $(x-12)$ with no constraint. Thus,
+Note that for computing the size of
 
 $$
  |A_1| = {x-6-1 \choose n-1}.
