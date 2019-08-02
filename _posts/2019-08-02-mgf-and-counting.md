@@ -51,12 +51,10 @@ $$
 Now, among those partitions, we need to exclude the ones with at least one $X_i>6$.
 Let $A_i$ be the event that $X_i$ is greater than 6. Then the cardinality of the event that at least one $X_i>6$ can be computed by the inclusion-exclusion principle as follows:
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 \left|\bigcup_{i=1}^{n} A_{i}\right| & = \sum_{i=1}^{n}\left|A_{i}\right|-\sum_{1 \leqslant i<j \leqslant n}\left|A_{i} \cap A_{j}\right|+\sum_{1 \leqslant i<j<k \leqslant n}\left|A_{i} \cap A_{j} \cap A_{k}\right|-\cdots+(-1)^{n-1}\left|A_{1} \cap \cdots \cap A_{n}\right| \\
 & = {n \choose 1 } \left|A_1\right| - {n \choose 2 } \left|A_1\cap A_2\right| + \cdots.
-\end{aligned}
-$$
+\end{aligned}$$
 
 Note that for computing $|A_1|$, we need to count the number of partitions such that $X_1>6$. Since $X_1$ now takes values $7, 8, 9, \cdots$, we may simply subtract 6 from it then count. Thus, the quantity $|A_1|$ should be the same as the number of $n$-integer partitions of $(x-12)$ with no constraint. Thus,
 
