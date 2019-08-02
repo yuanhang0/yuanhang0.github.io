@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Inclusion-Exclusion Principle
+title: Computing the Probability that Sum of $n$ Dice Equals $x$
 # subtitle: Each post also has a subtitle
 tag: [Probability, Combinatorics]
 date: 2019-08-02
