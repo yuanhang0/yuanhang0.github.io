@@ -4,7 +4,7 @@ title:
 showtag:
 #- ICPC模板
 ---
-## 近期 Recent
+## 近期 Recents
 {% include mathjax.html %}
 {% for post in site.posts limit:5 %}
 
