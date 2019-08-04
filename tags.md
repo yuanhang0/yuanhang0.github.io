@@ -2,6 +2,7 @@
 layout: page
 title: 标签 Tags
 ---
+{% include mathjax.html %}
 {% for tag in site.tags %}
 
 ##### {{ tag[0] }}
