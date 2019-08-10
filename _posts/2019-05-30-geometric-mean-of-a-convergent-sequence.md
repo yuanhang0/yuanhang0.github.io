@@ -11,19 +11,22 @@ It's been a while since my last update. A few weeks ago, my colleague proposed a
 **Lemma.** Suppose $\lim\limits_{n\rightarrow \infty} a_n = a$ and $a_n>0,~\forall n$. Then $\lim\limits_{n\rightarrow \infty} \sqrt[n]{a_1\cdots a_n} = a.$
 
 - Example 1. $\lim\limits_{n\rightarrow \infty} \frac{n+1}{n} = 1.$ By the Lemma, we have:
+
 $$
 \lim\limits_{n\rightarrow \infty} \sqrt[n]{\frac{2}{1}\frac{3}{2}\cdots\frac{n+1}{n}} = \lim\limits_{n\rightarrow \infty} \sqrt[n]{n+1} = 1.
 $$
 
 - Example 2. $\lim\limits_{n\rightarrow \infty} \frac{1}{n} = 0.$ By the Lemma, we have:
+
 $$
 \lim\limits_{n\rightarrow \infty} \frac{1}{\sqrt[n]{n!}} = 0 ~~\Leftrightarrow~~ \lim\limits_{n\rightarrow \infty} \sqrt[n]{n!} = \infty.
 $$
 
 - Example 3. $\lim\limits_{n\rightarrow \infty} \left(1+\frac{1}{n}\right)^n = e.$ By the Lemma, we have:
+
 $$
 \begin{align}
-e = \lim\limits_{n\rightarrow \infty} \left(1+\frac{1}{n}\right)^n
+e &= \lim\limits_{n\rightarrow \infty} \left(1+\frac{1}{n}\right)^n\\
 &= \lim\limits_{n\rightarrow \infty} \sqrt[n]{\left(\frac{2}{1}\right)\left(\frac{3}{2}\right)^2\cdots\left(\frac{n+1}{n}\right)^n}\\
 &= \lim\limits_{n\rightarrow \infty} \sqrt[n]{\frac{(n+1)^n}{n!}}\\
 &= \lim\limits_{n\rightarrow \infty}  \frac{ n+1 }{\sqrt[n]{n!}} = \lim\limits_{n\rightarrow \infty}  \frac{ n }{\sqrt[n]{n!}},
@@ -31,6 +34,7 @@ e = \lim\limits_{n\rightarrow \infty} \left(1+\frac{1}{n}\right)^n
 $$
 
 where the last equality follows from Example 2. Equivalently, we also have
+
 $$\lim\limits_{n\rightarrow \infty}  \frac{\sqrt[n]{n!}}{ n } = \frac{1}{e}.$$
 
 Note that this important limit can also be obtained as follows:
