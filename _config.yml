@@ -6,12 +6,12 @@ author: YW
 permalink: /posts/:categories/:title # 博文目录
 
 head: # 删改前确定知道自己在做什么
-#- tag: meta # Enable responsiveness on mobile devices
-#  var:
-#  - key: name
-#    value: viewport
-#  - key: content
-#    value: width=device-width, initial-scale=1.0, maximum-scale=2.0
+- tag: meta # Enable responsiveness on mobile devices
+  var:
+  - key: name
+    value: viewport
+  - key: content
+    value: width=1.2*device-width, initial-scale=1.0, maximum-scale=2.0
 - tag: meta
   var:
   - key: http-equiv
