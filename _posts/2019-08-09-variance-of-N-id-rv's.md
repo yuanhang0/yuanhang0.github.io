@@ -111,7 +111,7 @@ $$
 To ensure $\det\Sigma(-\rho)\ge 0$, we need the condition that
 
 $$
-1+\frac{-n\rho}{1+\rho} \ge 0  \qquad \Leftrightarrow \qquad 1+\rho \ge n\rho   \qquad \Leftrightarrow \qquad \rho \le \frac{1}{n-1} \qquad \Leftrightarrow \qquad -\rho \ge \frac{1}{1-n}.
+1+\frac{-n\rho}{1+\rho} \ge 0  \quad \Leftrightarrow \quad 1+\rho \ge n\rho   \quad \Leftrightarrow \quad \rho \le \frac{1}{n-1} \quad \Leftrightarrow \quad -\rho \ge \frac{1}{1-n}.
 $$
 
 Thus, we see that, for $n$ r.v.'s that are identically distributed with a negative pairwise correlation $-\rho$, $-\rho$ actually cannot be smaller than $\frac{1}{1-n}$. For example, 3 identically distributed r.v.'s cannot have a pairwise correlation smaller than $-\frac{1}{2}$ and this bound becomes $-\frac{1}{3}$ for 4 identically distributed r.v.'s.
