@@ -111,10 +111,19 @@ $$
 To ensure $\det\Sigma(-\rho)\ge 0$, we need the condition that
 
 $$
-1+\frac{-n\rho}{1+\rho} \ge 0  \qquad \Leftrightarrow \qquad 1+\rho \ge n\rho   \qquad \Leftrightarrow \qquad \rho \le \frac{1}{n-1}.
+1+\frac{-n\rho}{1+\rho} \ge 0  \qquad \Leftrightarrow \qquad 1+\rho \ge n\rho   \qquad \Leftrightarrow \qquad \rho \le \frac{1}{n-1} \qquad \Leftrightarrow \qquad -\rho \ge \frac{1}{1-n}.
 $$
 
-Thus, we see that, for $n$ r.v.'s that are identically distributed with a negative pairwise correlation $-\rho$, $\rho$ actually cannot exceed $\frac{1}{n-1}$. For example, 3 identically distributed r.v.'s cannot have a pairwise correlation smaller than $-\frac{1}{2}$ and this bound becomes $-\frac{1}{3}$ for 4 identically distributed r.v.'s.
+Thus, we see that, for $n$ r.v.'s that are identically distributed with a negative pairwise correlation $-\rho$, $-\rho$ actually cannot be smaller than $\frac{1}{1-n}$. For example, 3 identically distributed r.v.'s cannot have a pairwise correlation smaller than $-\frac{1}{2}$ and this bound becomes $-\frac{1}{3}$ for 4 identically distributed r.v.'s.
+
+
+Lastly, we make two more observations based on the above findings.
+
+- For identically distributed r.v.'s $X_i$'s with pairwise correlation $\rho$, what are the maximum and minimum values of $\rho$?
+
+$$
+\frac{1}{1-n} \le \rho \le 1.
+$$
 
 - How do we construct such $X_i$'s with pairwise correlation $\rho$?
 
