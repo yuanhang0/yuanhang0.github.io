@@ -52,7 +52,7 @@ html {
   font-size: 20px;
   line-height: 1.8;
 }
-@media (min-width: 46em) {
+@media (min-width: 44em) {
   html {
     font-size: 24px;
   }
