@@ -48,7 +48,7 @@ $$
 \frac{\Gamma(s+\alpha)}{\Gamma(s) } \sim s^{\alpha}, \quad \alpha \in \mathbb{C},
 $$
 
-as $|s| \rightarrow \infty$, the first term of the above quantity should goes to some constant $C$ that doesn't depend on $x_1, x_2, x_3$.
+as $ \left|s\right| \rightarrow \infty$, the first term of the above quantity should goes to some constant $C$ that doesn't depend on $x_1, x_2, x_3$.
 
 For the second term, we see that
 
