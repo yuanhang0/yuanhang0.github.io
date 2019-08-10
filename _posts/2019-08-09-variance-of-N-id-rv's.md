@@ -116,12 +116,12 @@ $$
 
 Thus, we see that, for $n$ r.v.'s that are identically distributed with a negative pairwise correlation $-\rho$, $\rho$ actually cannot exceed $\frac{1}{n-1}$. For example, 3 identically distributed r.v.'s cannot have a pairwise correlation smaller than $-\frac{1}{2}$ and this bound becomes $-\frac{1}{3}$ for 4 identically distributed r.v.'s.
 
-- How would we construct such $X_i$'s with a correlation matrix $\Sigma(\rho)$ or $\Sigma(-\rho)$?
+- How do we construct such $X_i$'s with pairwise correlation $\rho$?
 
-Well, we've showed that $\Sigma(\rho)$ is always positive definite. Thus, there exists a decomposition $\Sigma(\rho) = CC'$ for some matrix $C$. Then, for any i.i.d. r.v.'s $Z_i$'s with unit variance, the linear transformation $\mathbf{X} = C\mathbf{Z}$ should have the desired variance-covariance matrix since
+Well, for a positive pairwise correlation, we've showed that $\Sigma(\rho)$ is always positive definite. Thus, there exists a decomposition $\Sigma(\rho) = CC'$ for some matrix $C$. Then, for any i.i.d. r.v.'s $Z_i$'s with unit variance, the linear transformation $\mathbf{X} = C\mathbf{Z}$ should have the desired variance-covariance matrix since
 
 $$
 V(\mathbf{X}) = V(C\mathbf{Z}) = CV(\mathbf{Z})C' = CC' = \Sigma(\rho).
 $$
 
-If $\rho < \frac{1}{n-1}$, we know $\Sigma(-\rho)$ is also positive definite, thus the above construction also works in this case.
+For a negative pairwise correlation $-\rho$, as long as $-\rho > \frac{1}{1-n}$, we know $\Sigma(-\rho)$ is also positive definite, thus the above construction also works in this case.
