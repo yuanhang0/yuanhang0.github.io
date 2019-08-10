@@ -11,7 +11,7 @@ head: # 删改前确定知道自己在做什么
   - key: name
     value: viewport
   - key: content
-    value: width=device-width, initial-scale=0.8, maximum-scale=2.0, minimum-scale=0.5
+    value: width=device-width, initial-scale=1, maximum-scale=2.0, minimum-scale=0.25
 - tag: meta
   var:
   - key: http-equiv
