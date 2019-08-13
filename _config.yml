@@ -252,7 +252,7 @@ post:
     - id: alipay
       src: /public/image/alipay.jpg
 
-gtag: 'UA-137049032-1' # google analystics
+# gtag: 'UA-137049032-1' # google analystics
 
 disqus: "ibuki" # Disqus for comments
 
