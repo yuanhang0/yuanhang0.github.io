@@ -237,7 +237,7 @@ post:
       unit: ' minutes'
       divided_by: 300
     visitor: # 需要开启valine的visitor选项使之开始计数; 可能会和busuanzi统计的有出入
-      enable: false
+      enable: true
       unit: ' times'
     copyright: '<span class="fa fa-creative-commons"></span>&nbsp;<a rel="license" href="//creativecommons.org/licenses/by-sa/4.0/deed.zh">BY-SA 4.0</a>（除特别声明或转载文章外）'
   related:
