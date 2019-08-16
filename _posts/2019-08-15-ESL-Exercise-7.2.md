@@ -3,7 +3,7 @@ layout: post
 title: Deriving the Test Error for the Bayes Classifier
 # subtitle: Each post also has a subtitle
 tag: [Statistics]
-date: 2019-08-09
+date: 2019-08-15
 comments: true
 ---
 The following problem is from the book *The Elements of
