@@ -16,7 +16,7 @@ $$
 $$
 
 where $\hat{G}(x)=I\left(\hat{f}(x)>\frac{1}{2}\right), G(x)=I\left(f(x)>\frac{1}{2}\right)$ is the Bayes classifier
-and $\operatorname{Err}_{\mathrm{B}}\left(x_{0}\right)=\operatorname{Pr}\left(Y \neq G\left(x_{0}\right) \vert X=x_{0}\right),$ the irreducible Bayes error at $x_{0}$ .
+and $\operatorname{Err}_{\mathrm{B}} (x_{0})=\operatorname{Pr}\left(Y \neq G(x_{0}) \vert X=x_{0}\right)$, the irreducible Bayes error at $x_{0}$ .
 
 Using the approximation $\hat{f}\left(x_{0}\right) \sim N\left(\E \hat{f}\left(x_{0}\right), \Var\left(\hat{f}\left(x_{0}\right)\right), \text { show that }\right.$
 
