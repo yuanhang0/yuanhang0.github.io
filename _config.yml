@@ -254,8 +254,7 @@ post:
 
 # gtag: 'UA-137049032-1' # google analystics
 
-gtag:
-  enable: true
+gtag: "UA-137049032-1"
 
 disqus: "ibuki" # Disqus for comments
 
