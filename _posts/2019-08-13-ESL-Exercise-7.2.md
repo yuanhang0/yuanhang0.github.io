@@ -9,7 +9,7 @@ comments: true
 The following problem is from the book *The Elements of
 Statistical Learning, 2nd Ed.*
 
-Ex. 7.2 For 0-1 loss with $Y \in\{0,1\}$ and $\operatorname{Pr}\left(Y=1 | x_{0}\right)=f\left(x_{0}\right),$ show that
+Ex. 7.2 For 0-1 loss with $Y \in\{0,1\}$ and $\operatorname{Pr}\left(Y=1 \vert x_{0}\right)=f\left(x_{0}\right),$ show that
 
 $$
 \begin{aligned} \operatorname{Err}\left(x_{0}\right) &=\operatorname{Pr}\left(Y \neq \hat{G}\left(x_{0}\right) | X=x_{0}\right) \\ &=\operatorname{Err}_{\mathrm{B}}\left(x_{0}\right)+\left\vert2 f\left(x_{0}\right)-1\right\vert \operatorname{Pr}\left(\hat{G}\left(x_{0}\right) \neq G\left(x_{0}\right) \vert X=x_{0}\right) \end{aligned}
