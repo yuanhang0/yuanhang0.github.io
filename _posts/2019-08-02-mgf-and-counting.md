@@ -56,7 +56,7 @@ $$
 & = {n \choose 1 } \left|A_1\right| - {n \choose 2 } \left|A_1\cap A_2\right| + \cdots. \end{aligned}
 $$
 
-Note that for computing the cardinality of $A_1$, we need to count the number of partitions such that $X_1>6$. Since $X_1$ now takes values $7, 8, 9, \cdots$, we may simply subtract 6 from it then count. Thus, the cardinality of $A_1$ should be the same as the number of $n$-integer partitions of $(x-12)$ with no constraint. Thus,
+Note that for computing the cardinality of $A_1$, we need to count the number of partitions such that $X_1>6$. Since $X_1$ now takes values $7, 8, 9, \cdots$, we may simply subtract 6 from it then count. Thus, the cardinality of $A_1$ should be the same as the number of $n$-integer partitions of $(x-6)$ with no constraint. Thus,
 
 $$
  |A_1| = {x-6-1 \choose n-1}.
@@ -73,7 +73,8 @@ Let's put everything together:
 
 $$
 \begin{aligned}
- & \quad{x-1 \choose n-1} - \left[{n \choose 1 }{x-6-1 \choose n-1}+(-1)^1 {n \choose 2 }{x- 6\cdot 2-1 \choose n-1}+\cdots  + (-1)^{k-1} {n \choose k }{x- 6k-1 \choose n-1} \right] \\
+  \quad{x-1 \choose n-1} &- \left[{n \choose 1 }{x-6-1 \choose n-1}+(-1)^1 {n \choose 2 }{x- 6\cdot 2-1 \choose n-1}+\cdots
+   + (-1)^{k-1} {n \choose k }{x- 6k-1 \choose n-1} \right] \\
  & = \sum_{k=0}^{[\frac{x-1}{6}]} (-1)^k {n \choose k} {x - 6k -1 \choose n-1},
 \end{aligned}
 $$
