@@ -49,6 +49,7 @@ $$
 & = \operatorname{Err}_{\mathrm{B}}\left(x_{0}\right)+\left[2 \operatorname{Pr}\left(Y = {G}\left(x_{0}\right)| X=x_{0}\right)-1\right] \operatorname{Pr}\left(\hat{G}\left(x_{0}\right) \neq G\left(x_{0}\right) | X=x_{0}\right),
  \end{aligned}
 $$
+
 where in the third equality we used the fact that $Y, G, \hat{G}$ are 0-1 valued and thus cannot be all different from each other. It remains to show
 $ 2 \operatorname{Pr}\left(Y = {G}\left(x_{0}\right)| X=x_{0}\right)-1 = \left\vert2 f\left(x_{0}\right)-1\right\vert$. Note that
 
@@ -75,3 +76,31 @@ $$
 &=\left\vert2 f\left(x_{0}\right)-1\right\vert.
  \end{aligned}
 $$
+
+For the second part of the problem, we first note that if $x_0$ satisfies $f(x_0)>\frac{1}{2}$, then $G(x_0) = 0$ and if $x_0$ satisfies $f(x_0)\le\frac{1}{2}$, then $G(x_0) = 1$. Hence, we can obtain the desired equation:
+
+$$
+\begin{aligned}
+\operatorname{Pr}\left(\hat{G}\left(x_{0}\right) \neq G\left(x_{0}\right) | X=x_{0}\right)  &= \operatorname{Pr}\left(\hat{G}\left(x_{0}\right) =1,~G\left(x_{0}\right)=0 | X=x_{0}\right) + \operatorname{Pr}\left(\hat{G}\left(x_{0}\right)=0,~ G\left(x_{0}\right)=1 | X=x_{0}\right) \\
+& = \operatorname{Pr}\left(\hat{G}\left(x_{0}\right)>\frac{1}{2}\right) I\left\{f(x_0)\le \frac{1}{2}\right\} + \operatorname{Pr}\left(\hat{G}\left(x_{0}\right)\le\frac{1}{2}\right) I\left\{f(x_0)>\frac{1}{2}\right\}\\
+& = \operatorname{Pr}\left(\frac{\hat{G}\left(x_{0}\right)- \E \hat{f}\left(x_{0}\right)}{\Var\left(\hat{f}\left(x_{0}\right)\right)}> \frac{\frac{1}{2}- \E \hat{f}\left(x_{0}\right)}{\Var\left(\hat{f}\left(x_{0}\right)\right)}\right) I\left\{f(x_0)\le \frac{1}{2}\right\}\\
+&~~~~ + \operatorname{Pr}\left(\frac{\hat{G}\left(x_{0}\right)- \E \hat{f}\left(x_{0}\right)}{\Var\left(\hat{f}\left(x_{0}\right)\right)} \le \frac{\frac{1}{2}- \E \hat{f}\left(x_{0}\right)}{\Var\left(\hat{f}\left(x_{0}\right)\right)}\right) I\left\{f(x_0)> \frac{1}{2}\right\}\\
+&\approx \Phi\left(\frac{-\left(\frac{1}{2}-\E \hat{f}\left(x_{0}\right)\right)}{\sqrt{\Var\left(\hat{f}\left(x_{0}\right)\right)}}\right)I\left\{f(x_0)\le \frac{1}{2}\right\} \\
+&~~~~+\Phi\left(\frac{\frac{1}{2}-\E \hat{f}\left(x_{0}\right)}{\sqrt{\Var\left(\hat{f}\left(x_{0}\right)\right)}}\right)I\left\{f(x_0)> \frac{1}{2}\right\}\\
+&= \Phi\left(\frac{\operatorname{sign}\left(\frac{1}{2}-f\left(x_{0}\right)\right)\left(\E \hat{f}\left(x_{0}\right)-\frac{1}{2}\right)}{\sqrt{\Var\left(\hat{f}\left(x_{0}\right)\right)}}\right),
+ \end{aligned}
+$$
+
+where we used the approximation $\hat{f}\left(x_{0}\right) \sim N\left(\E \hat{f}\left(x_{0}\right), \Var\left(\hat{f}\left(x_{0}\right)\right)\right)$ in the problem statement.
+
+As stated right after this exercise in this book, we have the following observations:
+
+- The probability of misclassification depends on the true $f\left(x_{0}\right)$ only through which side of the boundary $\frac{1}{2}$ that it lies.
+
+- If $\mathrm{E} \hat{f}\left(x_{0}\right)$ is on the same
+side of $\frac{1}{2}$ as $f\left(x_{0}\right),$ then the numerator is negative, and decreasing the variance
+will decrease the misclassification error.
+
+- On the other hand, if $\operatorname{E} \hat{f}\left(x_{0}\right)$ is on the opposite side of $\frac{1}{2}$ to $f\left(x_{0}\right),$ then the numerator is positive and it pays to
+increase the variance! Such an increase will improve the chance that $\hat{f}\left(x_{0}\right)$
+falls on the correct side of $\frac{1}{2}$ (Friedman, 1997).
