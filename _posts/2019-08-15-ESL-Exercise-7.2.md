@@ -86,9 +86,9 @@ For the second part of the problem, we first note that if $x_0$ satisfies $f(x_0
 $$
 \begin{aligned}
 \operatorname{Pr}\left(\hat{G}\left(x_{0}\right) \neq G\left(x_{0}\right) | X=x_{0}\right)  &= \operatorname{Pr}\left(\hat{G}\left(x_{0}\right) =1,~G\left(x_{0}\right)=0 | X=x_{0}\right) + \operatorname{Pr}\left(\hat{G}\left(x_{0}\right)=0,~ G\left(x_{0}\right)=1 | X=x_{0}\right) \\
-& = \operatorname{Pr}\left(\hat{G}\left(x_{0}\right)>\frac{1}{2}\right) I\left\{f(x_0)\le \frac{1}{2}\right\} + \operatorname{Pr}\left(\hat{G}\left(x_{0}\right)\le\frac{1}{2}\right) I\left\{f(x_0)>\frac{1}{2}\right\}\\
-& = \operatorname{Pr}\left(\frac{\hat{G}\left(x_{0}\right)- \E \hat{f}\left(x_{0}\right)}{\Var\left(\hat{f}\left(x_{0}\right)\right)}> \frac{\frac{1}{2}- \E \hat{f}\left(x_{0}\right)}{\Var\left(\hat{f}\left(x_{0}\right)\right)}\right) I\left\{f(x_0)\le \frac{1}{2}\right\}\\
-&~~~~ + \operatorname{Pr}\left(\frac{\hat{G}\left(x_{0}\right)- \E \hat{f}\left(x_{0}\right)}{\Var\left(\hat{f}\left(x_{0}\right)\right)} \le \frac{\frac{1}{2}- \E \hat{f}\left(x_{0}\right)}{\Var\left(\hat{f}\left(x_{0}\right)\right)}\right) I\left\{f(x_0)> \frac{1}{2}\right\}\\
+& = \operatorname{Pr}\left(\hat{f}\left(x_{0}\right)>\frac{1}{2}\right) I\left\{f(x_0)\le \frac{1}{2}\right\} + \operatorname{Pr}\left(\hat{f}\left(x_{0}\right)\le\frac{1}{2}\right) I\left\{f(x_0)>\frac{1}{2}\right\}\\
+& = \operatorname{Pr}\left(\frac{\hat{f}\left(x_{0}\right)- \E \hat{f}\left(x_{0}\right)}{\Var\left(\hat{f}\left(x_{0}\right)\right)}> \frac{\frac{1}{2}- \E \hat{f}\left(x_{0}\right)}{\Var\left(\hat{f}\left(x_{0}\right)\right)}\right) I\left\{f(x_0)\le \frac{1}{2}\right\}\\
+&~~~~ + \operatorname{Pr}\left(\frac{\hat{f}\left(x_{0}\right)- \E \hat{f}\left(x_{0}\right)}{\Var\left(\hat{f}\left(x_{0}\right)\right)} \le \frac{\frac{1}{2}- \E \hat{f}\left(x_{0}\right)}{\Var\left(\hat{f}\left(x_{0}\right)\right)}\right) I\left\{f(x_0)> \frac{1}{2}\right\}\\
 &\approx \Phi\left(\frac{-\left(\frac{1}{2}-\E \hat{f}\left(x_{0}\right)\right)}{\sqrt{\Var\left(\hat{f}\left(x_{0}\right)\right)}}\right)I\left\{f(x_0)\le \frac{1}{2}\right\} \\
 &~~~~+\Phi\left(\frac{\frac{1}{2}-\E \hat{f}\left(x_{0}\right)}{\sqrt{\Var\left(\hat{f}\left(x_{0}\right)\right)}}\right)I\left\{f(x_0)> \frac{1}{2}\right\}\\
 &= \Phi\left(\frac{\operatorname{sign}\left(\frac{1}{2}-f\left(x_{0}\right)\right)\left(\E \hat{f}\left(x_{0}\right)-\frac{1}{2}\right)}{\sqrt{\Var\left(\hat{f}\left(x_{0}\right)\right)}}\right),
