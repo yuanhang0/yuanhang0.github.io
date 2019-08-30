@@ -13,8 +13,8 @@ Suppose that we can generate uniform r.v. $U$ on $(0,1)$.
 ---
 We can simply scale U to make its support be the desired interval:
 - Return $X = (b-a)U+a$.
-
-
+<br/>
+<br/>
 
 ## Generate $X\sim F$ where $F^{-1}$ has a closed-form expression
 ---
@@ -51,8 +51,10 @@ Here are some examples:
 - $X = -\frac{\log U}{\lambda} \sim \operatorname{Exp}(\lambda)$;
 
 - $X =\frac{(− \log U)^{1/a}} {\lambda} \sim$ Weibull $(a, \lambda)$.
+<br/>
+<br/>
 
-# Generate $Z\sim N(0,1)$
+## Generate $Z\sim N(0,1)$
 ---
 Normal distribution doesn't have closed-form cdf $F$ or $F^{-1}$. One way of generating normal r.v.'s is based on the [Box-Muller transform](https://en.wikipedia.org/wiki/Box%E2%80%93Muller_transform). The following is the code that I use in C.
 
@@ -85,14 +87,16 @@ float norm(long *idum)
     }
 }
 ```
-
+<br/>
+<br/>
 
 ## Generate $X\sim N(\mu,\sigma^2)$
 ---
 
 If $Z\sim N(0,1)$, then $\sigma Z+\mu \sim N(\mu, \sigma^2)$. Thus, we can apply a linear transformation on the standard normal r.v. $Z$ to get $X$:
 - Return $X = \sigma Z+\mu$.
-
+<br/>
+<br/>
 ## Generate $X\sim Ber(p)$ and $X\sim B(n,p)$
 ---
 
@@ -104,7 +108,8 @@ The method below can be considered as an example of the inverse transform sampli
 - Else return $X = 0$;
 
 To generate $X\sim B(n,p)$, we may use the fact that $X = \sum\limits_{i=1}^n X_i \sim B(n,p)$, where $X_i$'s are iid r.v.'s from $Ber(p)$.
-
+<br/>
+<br/>
 
 ## Generate $X\sim \operatorname{Geometric}(p)$ and $X\sim \operatorname{NegBin}(n,p)$
 ---
@@ -132,7 +137,8 @@ $$
 where $X_i$'s are iid r.v.'s from $\operatorname{Geometric}(p)$.
 
 In general, generating a discrete r.v. $X$ with a finite support can be done via similar steps as above.
-
+<br/>
+<br/>
 ## Generate $X\sim \operatorname{Poisson}(\lambda)$
 ---
 
