@@ -10,14 +10,14 @@ comments: true
 Suppose that we can generate uniform r.v. $U$ on $(0,1)$.
 
 ## Generate $X\sim U(a,b)$
-
+---
 We can simply scale U to make its support be the desired interval:
 - Return $X = (b-a)U+a$.
 
----
+
 
 ## Generate $X\sim F$ where $F^{-1}$ has a closed-form expression
-
+---
 Let r.v. $X$ have a distribution function $F$. Denote the inverse of $F$
 by $F^{-1}$. Then $X$ can be generated as follows:
 
@@ -52,9 +52,8 @@ Here are some examples:
 
 - $X =\frac{(− \log U)^{1/a}} {\lambda} \sim$ Weibull $(a, \lambda)$.
 
----
-
 # Generate $Z\sim N(0,1)$
+---
 Normal distribution doesn't have closed-form cdf $F$ or $F^{-1}$. One way of generating normal r.v.'s is based on the [Box-Muller transform](https://en.wikipedia.org/wiki/Box%E2%80%93Muller_transform). The following is the code that I use in C.
 
 ```CPP
@@ -87,17 +86,16 @@ float norm(long *idum)
 }
 ```
 
----
 
 ## Generate $X\sim N(\mu,\sigma^2)$
-
+---
 
 If $Z\sim N(0,1)$, then $\sigma Z+\mu \sim N(\mu, \sigma^2)$. Thus, we can apply a linear transformation on the standard normal r.v. $Z$ to get $X$:
 - Return $X = \sigma Z+\mu$.
 
+## Generate $X\sim Ber(p)$ and $X\sim B(n,p)$
 ---
 
-## Generate $X\sim Ber(p)$ and $X\sim B(n,p)$
 The method below can be considered as an example of the inverse transform sampling described above.
 - Generate $U \sim U(0,1)$;
 
@@ -107,9 +105,9 @@ The method below can be considered as an example of the inverse transform sampli
 
 To generate $X\sim B(n,p)$, we may use the fact that $X = \sum\limits_{i=1}^n X_i \sim B(n,p)$, where $X_i$'s are iid r.v.'s from $Ber(p)$.
 
----
 
 ## Generate $X\sim \operatorname{Geometric}(p)$ and $X\sim \operatorname{NegBin}(n,p)$
+---
 
 For a Geometric distribution with pmf:
 
@@ -135,9 +133,9 @@ where $X_i$'s are iid r.v.'s from $\operatorname{Geometric}(p)$.
 
 In general, generating a discrete r.v. $X$ with a finite support can be done via similar steps as above.
 
+## Generate $X\sim \operatorname{Poisson}(\lambda)$
 ---
 
-## Generate $X\sim \operatorname{Poisson}(\lambda)$
 Possion random variables have a countable support $\mathbb{N}$. It's not preferable to generate it from direct inverting the cdf since the accuracy would be bad for $P(X=k)$ when $k$ is large.
 
 Instead, we use the fact that for a Possion process with rate $\lambda = 1$, the number of arrivals in an interval of length $\lambda$ has distribution $\operatorname{Poisson}(\lambda)$.
