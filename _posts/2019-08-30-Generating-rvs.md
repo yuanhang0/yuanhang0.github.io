@@ -9,11 +9,11 @@ comments: true
 
 Suppose that we can generate uniform r.v. $U$ on $(0,1)$.
 
-##### Generate $X\sim U(a,b)$
+#### Generate $X\sim U(a,b)$
 We can simply scale U to make its support be the desired interval:
 - Return $X = (b-a)U+a$.
 
-##### Generate $X\sim F$ where $F^{-1}$ has a closed-form expression
+### Generate $X\sim F$ where $F^{-1}$ has a closed-form expression
 Let r.v. $X$ have a distribution function $F$. Denote the inverse of $F$
 by $F^{-1}$. Then $X$ can be generated as follows:
 
