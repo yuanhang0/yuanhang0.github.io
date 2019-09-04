@@ -12,7 +12,7 @@ $('pre').addClass("line-numbers");
 Prism.plugins.toolbar.registerButton('show-language', {
   text: '{{ site.PrismJS.plugins.toolbar.show_language.text }}', // required
   onClick: function (env) { // optional
-    alert('{{ site.PrismJS.plugins.toolbar.show_language.alert }}' + env.language);
+    alert('{{ site.PrismJS.plugins.toolbar.show_language.alert }}' +' '+ env.language + '.');
   }
 });
 {% endif %}
