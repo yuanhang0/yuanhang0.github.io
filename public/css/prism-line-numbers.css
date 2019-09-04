@@ -2,6 +2,7 @@ pre[class*="language-"].line-numbers {
 	position: relative;
 	padding-left: 3.8em;
 	counter-reset: linenumber;
+	line-height: 1.5;
 }
 
 pre[class*="language-"].line-numbers > code {
@@ -18,7 +19,7 @@ pre[class*="language-"].line-numbers > code {
 	width: 3em; /* works for line-numbers below 1000 lines */
 	letter-spacing: -1px;
 	border-right: 1px solid #999;
-	line-height: 1.5;
+
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
