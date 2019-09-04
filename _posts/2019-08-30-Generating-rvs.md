@@ -61,7 +61,7 @@ Normal distribution doesn't have closed-form cdf $F$ or $F^{-1}$. One way of gen
 ```CPP
 float norm(long *idum){
 /* This function returns a r.v. X~N(0,1).
-Call with a negative integer idum to initialize. */
+Call with a negative integer idum to initialize it. */
     float ran1(long *idum); // ran1 generates r.v. U ~ U(0,1).
     static int iset = 0;
     static float gset;
