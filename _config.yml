@@ -129,7 +129,7 @@ PrismJS: # 代码高亮插件，可以在https://prismjs.com/download.html自己
   enable: true
   src:
     - stylesheet: /public/css/prism-tomorrow.css
-    - stylesheet: //cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.css
+    - stylesheet: /public/css/prism-line-numbers.css
     - stylesheet: //cdn.jsdelivr.net/npm/prismjs/plugins/toolbar/prism-toolbar.css
   plugins:
     line_numbers: true
