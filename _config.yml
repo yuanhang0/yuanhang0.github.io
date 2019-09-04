@@ -128,7 +128,7 @@ mermaid: # https://github.com/knsv/mermaid
 PrismJS: # 代码高亮插件，可以在https://prismjs.com/download.html自己定制，将定制的js和css替换我的/public/PrismJS下的对应文件即可。#cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css。我这里只导入了三个自己喜欢的插件。
   enable: true
   src:
-    - stylesheet: //cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css
+    - stylesheet: /public/css/prism-tomorrow.css
     - stylesheet: //cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.css
     - stylesheet: //cdn.jsdelivr.net/npm/prismjs/plugins/toolbar/prism-toolbar.css
   plugins:
@@ -137,11 +137,11 @@ PrismJS: # 代码高亮插件，可以在https://prismjs.com/download.html自己
     toolbar:
       show_language:
         enable: true
-        text: What's the language?
-        alert: It's
+        text: 'What's the language?'
+        alert: 'It's'
       select_code:
         enable: true
-        innerHTML: Select All
+        innerHTML: 'Select All'
 
 katex: # KaTeX
   enable: false
