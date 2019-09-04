@@ -2,6 +2,10 @@ pre[class*="language-"].line-numbers {
 	position: relative;
 	padding-left: 3.8em;
 	counter-reset: linenumber;
+	font-size: 0.9em;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
 	line-height: 1.5;
 }
 
@@ -19,12 +23,10 @@ pre[class*="language-"].line-numbers > code {
 	width: 3em; /* works for line-numbers below 1000 lines */
 	letter-spacing: -1px;
 	border-right: 1px solid #999;
-
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-
 }
 
 	.line-numbers-rows > span {
