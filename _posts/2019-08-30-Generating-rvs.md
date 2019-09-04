@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Generating r.v.'s
+title: Generating R.V.'s
 # subtitle: Each post also has a subtitle
 tag: [Statistics, Coding]
 date: 2019-08-30
