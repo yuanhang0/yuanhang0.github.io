@@ -132,7 +132,7 @@ PrismJS: # 代码高亮插件，可以在https://prismjs.com/download.html自己
     - stylesheet: //cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.css
     - stylesheet: //cdn.jsdelivr.net/npm/prismjs/plugins/toolbar/prism-toolbar.css
   plugins:
-    line_numbers: true
+    line_numbers: false
     autoloader: //cdn.jsdelivr.net/npm/prismjs/components/ # 根据语言自动加载的高亮插件
     toolbar:
       show_language:
