@@ -137,11 +137,11 @@ PrismJS: # 代码高亮插件，可以在https://prismjs.com/download.html自己
     toolbar:
       show_language:
         enable: true
-        text: 'What's the language?'
-        alert: 'It's'
+        text: What is the language?
+        alert: It is
       select_code:
         enable: true
-        innerHTML: 'Select All'
+        innerHTML: Select All
 
 katex: # KaTeX
   enable: false
