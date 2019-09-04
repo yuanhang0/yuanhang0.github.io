@@ -58,7 +58,7 @@ Here are some examples:
 ---
 Normal distribution doesn't have closed-form cdf $F$ or $F^{-1}$. One way of generating normal r.v.'s is based on the [Box-Muller transform](https://en.wikipedia.org/wiki/Box%E2%80%93Muller_transform). The following is the code that I use in C.
 
-```CPP
+```CPP{numberLines: true}
 float norm(long *idum){
 /* This function returns a r.v. X~N(0,1).
 Call with a negative integer idum to initialize it. */
