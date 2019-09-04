@@ -14,7 +14,7 @@ pre[class*="language-"].line-numbers > code {
 	white-space: inherit;
 }
 
-.line-numbers.line-numbers-rows {
+.line-numbers .line-numbers-rows {
 	position: absolute;
 	pointer-events: none;
 	top: 0;
