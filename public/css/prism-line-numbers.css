@@ -16,7 +16,7 @@ pre[class*="language-"].line-numbers > code {
 	font-size: 0.9em;
 }
 
-.line-numbers .line-numbers-rows {
+.line-numbers.line-numbers-rows {
 	position: absolute;
 	pointer-events: none;
 	top: 0;
@@ -24,6 +24,7 @@ pre[class*="language-"].line-numbers > code {
 	left: -3.8em;
 	width: 3em; /* works for line-numbers below 1000 lines */
 	letter-spacing: -1px;
+	line-height: 1.5;
 	border-right: 1px solid #999;
 	-webkit-user-select: none;
 	-moz-user-select: none;
