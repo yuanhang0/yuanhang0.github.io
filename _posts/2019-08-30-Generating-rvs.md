@@ -2,7 +2,7 @@
 layout: post
 title: Generating R.V.'s
 # subtitle: Each post also has a subtitle
-tag: [Statistics, Coding]
+tag: [Statistics, Algorithm]
 date: 2019-08-30
 comments: true
 ---
