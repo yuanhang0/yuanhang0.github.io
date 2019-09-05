@@ -97,7 +97,7 @@ If $Z\sim N(0,1)$, then $\sigma Z+\mu \sim N(\mu, \sigma^2)$. Thus, we can apply
 <br/>
 <br/>
 
-## Generate $X\sim Ber(p)$ and $X\sim B(n,p)$
+## Generate $X\sim \operatorname{Ber}(p)$ and $X\sim \text{B}(n,p)$
 ---
 
 The method below can be considered as an example of the inverse transform sampling described above.
