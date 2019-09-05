@@ -2,11 +2,6 @@ pre[class*="language-"].line-numbers {
 	position: relative;
 	padding-left: 3.8em;
 	counter-reset: linenumber;
-	font-size: 0.9em;
-	word-spacing: normal;
-	word-break: normal;
-	word-wrap: normal;
-	line-height: 1.5;
 }
 
 pre[class*="language-"].line-numbers > code {
@@ -41,4 +36,6 @@ pre[class*="language-"].line-numbers > code {
 			display: block;
 			padding-right: 0.8em;
 			text-align: right;
+			font-size: 0.9em;
+			line-height: 1.5;
 		}
