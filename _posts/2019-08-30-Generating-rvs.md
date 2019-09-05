@@ -107,7 +107,7 @@ The method below can be considered as an example of the inverse transform sampli
 
 - Else return $X = 0$;
 
-To generate $X\sim B(n,p)$, we may use the fact that $X = \sum\limits_{i=1}^n X_i \sim B(n,p)$, where $X_i$'s are iid r.v.'s from $Ber(p)$.
+To generate $X\sim \text{B}(n,p)$, we may use the fact that $X = \sum\limits_{i=1}^n X_i \sim \text{B}(n,p)$, where $X_i$'s are iid r.v.'s from $\text{Ber}(p)$.
 <br/>
 <br/>
 
