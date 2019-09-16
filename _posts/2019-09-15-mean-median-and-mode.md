@@ -64,7 +64,7 @@ Thus, we have the following:
 
 $$
 \begin{aligned}
-\E(\|X-c\|_0) = \E(I\{\|X-c\|\}) = P(X-c \ne 0) = P(X \ne c).
+\E(\|X-c\|_0) = \E(I\{X-c \ne 0\}) = P(X-c \ne 0) = P(X \ne c).
 \end{aligned}
 $$
 
