@@ -81,7 +81,7 @@ $$
 
 where the first and third inequalities follow from Jensen's inequality, the second inequality comes from our claim 2 above.
 
-Another point worth noting is that our previous claims regarding a r.v. $X$ can be extended to the case of a sample $x_1,\cdots, x_n$. For example, the constant $c$ that minimizes the MSE, $\frac{1}{n}\sum_{i=1}^n (x_i -c )^2$, is the sample mean. We can adapt our arguments above to prove this claim. Similar steps can be done for the sample median and sample mode also. As a quick example, let's look at the sample mode case. We want to minimize $\frac{1}{n}\sum_{i=1}^n \|x_i -c \|_0$ w.r.t $c$. Note that
+Another point worth noting is that our previous claims regarding a r.v. $X$ can be extended to the case of a sample $x_1,\cdots, x_n$. For example, the constant $c$ that minimizes the MSE, $\frac{1}{n}\sum_{i=1}^n (x_i -c )^2$, is the sample mean. We can adapt our arguments above to prove this claim. Similar steps can be done for the sample median and sample mode also. As a quick example, let's look at the sample mode case. We want to minimize $$\frac{1}{n}\sum_{i=1}^n \|x_i -c \|_0$$ w.r.t $c$. Note that
 
 $$
 \begin{aligned}
@@ -89,7 +89,7 @@ $$
 \end{aligned}
 $$
 
-Hence, minimizing $\frac{1}{n}\sum_{i=1}^n \|x_i -c \|_0$ is equivalent to maximizing
+Hence, minimizing $$\frac{1}{n}\sum_{i=1}^n \|x_i -c \|_0 $$ is equivalent to maximizing
 
 $$
 \begin{aligned}
