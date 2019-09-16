@@ -9,11 +9,11 @@ comments: true
 
 For a random variable $X$, we are all familiar with how its mean, median and mode are defined. Let's examine them again from a different perspective. For simplicity, let's assume $X$ has finite first two moments. Let $\mu = \E(X)$ be its expectation, $m$ be its median.
 
-If you are asked to choose one single number to describe the r.v. $X$, what would be the "best" choice? It sounds like choosing either mean, median or mode all makes sense. Let's put it more formally, we want to find $c$ such that the expected loss $\E(d(X,c))$ is minimized, where $d(\cdot,\cdot)$ is some distance function.
+If you are asked to choose one single number to describe the r.v. $X$, what would be the "best" choice? It sounds like choosing either mean, median or mode all makes sense. Let's put it more formally, we want to find $c$ such that the expected loss $\E(d(X,c))$ is minimized, where $d(\cdot,\cdot)$ is some distance function. We consider the cases of $l_p$-norm raised to the power $p$ for different $p$'s.
 
-- Mean is the minimizer when $d(\cdot,\cdot)$ is the $l_2$ distance, i.e.,
+- Mean is the minimizer when $d(\cdot,\cdot)$ is the squared $l_2$ distance, i.e.,
 
-$$\mu = \E(X) = \arg \min_{c} \E(\|X-c\|_2) = \arg \min_{c} \E(\|X-c\|_2^2).$$
+$$\mu = \E(X) =  \arg \min_{c} \E(\|X-c\|_2^2).$$
 
 To see it, note that
 
@@ -29,7 +29,7 @@ where equality holds iff $c = \mu$.
 
 - Median is the minimizer when $d(\cdot,\cdot)$ is the $l_1$ distance, i.e.,
 
-$$\mu = \E(X) = \arg \min_{c} \E(\|X-c\|_1).$$
+$$\mu = \E(X) = \arg \min_{c} \E(\|X-c\|_1^1).$$
 
 We first rewrite $\E(\|X-c\|_1)$ in a convenient form as follows:
 $$
@@ -56,9 +56,9 @@ which is less than 0 if $c$ is smaller than the median $m$, and is greater than 
 
 - Mode is the minimizer when $d(\cdot,\cdot)$ is the $l_0$ distance, i.e.,
 
-$$\mu = \E(X) = \arg \min_{c} \E(\|X-c\|_0), $$
+$$\mu = \E(X) = \arg \min_{c} \E(\|X-c\|_0^0) = \arg \min_{c} \E(\|X-c\|_0), $$
 
-where $$\|x\|_0$$ is the number of nonzero elements. For one-dimensional case, it's simply the indicator function: $$\|x\|_0 = I\{x\ne 0\}$$.
+where $$\|x\|_0$$ is the number of nonzero elements. For one-dimensional case, it's simply the indicator function: $$\|x\|_0 = I\{x\ne 0\}$$. Note that $$\|x\|_0^0 = I\{x\ne 0\}^0 = I\{x\ne 0\}$$ since $0^0 = 0$ and $x^0=1$ if $x\ne 0$.
 
 Thus, we have the following:
 
