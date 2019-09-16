@@ -34,7 +34,7 @@ $$\mu = \E(X) = \arg \min_{c} \E(\|X-c\|_1).$$
 We first rewrite $\E(\|X-c\|_1)$ in a convenient form as follows:
 $$
 \begin{aligned}
-g(c)  = \E|X-c| = \int_{0}^\infty P(|X-c|\ge t) ~dt & = \int_{0}^\infty P(X\ge c+t) ~dt +\int_{0}^\infty P(X<c-t) ~dt\\
+g(c)  = \E\vert X-c\vert = \int_{0}^\infty P(\vert X-c \vert \ge t) ~dt & = \int_{0}^\infty P(X\ge c+t) ~dt +\int_{0}^\infty P(X<c-t) ~dt\\
 &= \int_{c}^\infty P(X\ge s) ~ds -\int_{c}^{-\infty} P(X\le s) ~ds\\
 &= \int_{c}^\infty P(X\ge s) ~ds +\int_{-\infty}^c P(X\le s) ~ds,
 \end{aligned}
@@ -42,7 +42,7 @@ $$
 
 where for the second equality we used the formula for computing the expectation of a non-negative r.v.
 
-Hence, $g(c) = \E|X-c|$ is differentiable almost everywhere. And we see that
+Hence, $g(c) = \E \vert X-c \vert$ is differentiable almost everywhere. And we see that
 
 $$
 \begin{aligned}
