@@ -11,7 +11,7 @@ For a random variable $X$, we are all familiar with how its mean, median and mod
 
 If you are asked to choose one single number to describe the r.v. $X$, what would be the "best" choice? It sounds like choosing either mean, median or mode all makes sense. Let's put it more formally, we want to find $c$ such that the expected loss $\E(d(X,c))$ is minimized, where $d(\cdot,\cdot)$ is some distance function.
 
-1. Mean is the minimizer when $d(\cdot,\cdot)$ is the $l_2$ distance, i.e.,
+- Mean is the minimizer when $d(\cdot,\cdot)$ is the $l_2$ distance, i.e.,
 
 $$\mu = \E(X) = \arg \min_{c} \E(\|X-c\|_2) = \arg \min_{c} \E(\|X-c\|_2^2).$$
 
@@ -27,7 +27,7 @@ $$
 
 where equality holds iff $c = \mu$.
 
-2. Median is the minimizer when $d(\cdot,\cdot)$ is the $l_1$ distance, i.e.,
+- Median is the minimizer when $d(\cdot,\cdot)$ is the $l_1$ distance, i.e.,
 
 $$\mu = \E(X) = \arg \min_{c} \E(\|X-c\|_1).$$
 
@@ -54,7 +54,7 @@ $$
 which is less than 0 if $c$ is smaller than the median $m$, and is greater than 0 if $c$ is larger than the median $m$. Thus, $g(c)$ is decreasing on $(-\infty, m)$ and is increasing on $(m, \infty)$. So the minimizer is exactly the median.
 
 
-3. Mode is the minimizer when $d(\cdot,\cdot)$ is the $l_0$ distance, i.e.,
+- Mode is the minimizer when $d(\cdot,\cdot)$ is the $l_0$ distance, i.e.,
 
 $$\mu = \E(X) = \arg \min_{c} \E(\|X-c\|_0), $$
 
