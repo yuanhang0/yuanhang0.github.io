@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Estimated
+title: MLE with Censored Data
 # subtitle: Each post also has a subtitle
 tag: Statistics
 date: 2019-10-04
@@ -64,4 +64,4 @@ $$
 \hat \lambda =  \frac{\sum_{i=1}^n C_i}{\sum_{i=1}^n V_i} < \frac{n}{\sum_{i=1}^n V_i}=[\text{regular MLE of Exp}(\lambda)].
 $$
 
-It suggests that the estimate of $\lambda$ based on the censored data is smaller than the regular MLE if we pretend that the date is uncensored. This makes sense since we either observe $Y_i$ or a smaller quantity $X_i\le Y_i$. If we simply use the regular MLE to estimate the mean based on $V_i$'s, it makes our estimate have a smaller mean, i.e., we overestimate $\lambda$ by using the regular MLE. 
+It suggests that the estimate of $\lambda$ based on the censored data is smaller than the regular MLE if we pretend that the date is uncensored. This makes sense since we either observe $Y_i$ or a smaller quantity $X_i\le Y_i$. If we simply use the regular MLE to estimate the mean based on $V_i$'s, it makes our estimate have a smaller mean, i.e., we overestimate $\lambda$ by using the regular MLE.
