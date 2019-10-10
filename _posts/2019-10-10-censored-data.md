@@ -3,7 +3,7 @@ layout: post
 title: MLE with Censored Data
 # subtitle: Each post also has a subtitle
 tag: Statistics
-date: 2019-10-04
+date: 2019-10-10
 comments: true
 ---
 
@@ -11,17 +11,23 @@ Suppose bidder A and B are in a series of second-price auctions.
 
 > In real-time bidding (RTB), the second-price auction gives the winner a chance to pay a little less than their original submitted offer. Instead of having to pay the full price, the winning bidder pays the price offered by the second-highest bidder plus $0.01. The final price of the impression is known as the clearing price.  [Source](https://clearcode.cc/blog/first-price-second-price-auction/)
 
-For bidder A, he/she observes his/her offer $X_i,~i=1,..,100$. And only when he/she wins, he/she can observe B's offer $Y_i,~i=1,..,100$.
+For bidder A, he/she observes his/her offer $X_i,~i=1,..,n$. And only when he/she wins, he/she can observe B's offer $Y_i,~i=1,..,n$.
 Suppose the price offered by bidder B has exponential distribution with an unknown parameter $\lambda$. Try to estimate $\lambda$ based on A's observations.
 
 To formulate this problem, I follow what is routinely done with
 **censored data** in survival analysis. Define the observation r.v.
-$$V_i = \min\{X_i, Y_i\} = \begin{cases} X_i &\text{ if } X_i \le Y_i \text{ with } C_i = 0\\
+
+$$
+V_i = \min\{X_i, Y_i\} = \begin{cases} X_i &\text{ if } X_i \le Y_i \text{ with } C_i = 0\\
 Y_i &\text{ if } X_i > Y_i \text{ with } C_i = 1\end{cases}
 $$
+
 and the censoring variable
-$$ C_i = \begin{cases} 0 &\text{ if } X_i \le Y_i \\
-1 &\text{ if } X_i > Y_i \end{cases}. $$
+
+$$
+C_i = \begin{cases} 0 &\text{ if } X_i \le Y_i \\
+1 &\text{ if } X_i > Y_i \end{cases}.
+$$
 
 For the sample $(V_1,C_1),...,(V_n, C_n)$, we have:
 
@@ -42,10 +48,13 @@ P(V_i = v_i,C_i = 0) =P(V_i = v_i,C_i = 0) & = P(X_i = v_i,Y_i >v_i, C_i = 0)\\
 $$
 
 Note that only the terms $P(Y_i=v_i)$ and $P(Y_i>v_i)$ involves the parameter $\lambda$. Therefore, we can find the likelihood function of $\lambda$:
+
 $$
-\prod_{i=1}^n P(v_i,c_i) \propto \prod_{i=1}^n [f_Y(v_i)]^{c_i}[P(Y_i>v_i)]^{1-c_i}  = \text{Likelihood} =L(\lambda).$$
+\prod_{i=1}^n P(v_i,c_i) \propto \prod_{i=1}^n [f_Y(v_i)]^{c_i}[P(Y_i>v_i)]^{1-c_i}  = \text{Likelihood} =L(\lambda).
+$$
 
 Then, we solve the MLE as follows:
+
 $$
 \begin{aligned}
 L(\lambda) &= \prod_{i=1}^n [f_Y(V_i)]^{C_i}[P(Y_i>V_i)]^{1-C_i} = \prod_{i=1}^n \left[ \lambda e^{-\lambda V_i}\right]^{C_i}\left[e^{-\lambda V_i}\right]^{1-C_i}\\
