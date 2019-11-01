@@ -52,7 +52,7 @@ Therefore,
 Similarly,
 $$
 \begin{aligned}
-       \V(W_+) &= \V  \sum\limits_{k=1}^n k I\{\mbox{the k-th largest value} >0 \} =    \sum\limits_{k=1}^n k^2 \Var I\{\mbox{the k-th largest value} >0 \}\\
+       \Var(W_+) &= \Var\left(  \sum\limits_{k=1}^n k I\{\mbox{the k-th largest value} >0 \}\right) =    \sum\limits_{k=1}^n k^2 \Var I\{\mbox{the k-th largest value} >0 \}\\
        & = \sum\limits_{k=1}^n k^2\cdot\frac{1}{4} = \frac{n(n+1)(2n+1)}{24}.
    \end{aligned}
 $$
