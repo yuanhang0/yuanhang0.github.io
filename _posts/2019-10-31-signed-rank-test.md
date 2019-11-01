@@ -29,7 +29,7 @@ Assumptions: $D_i$'s are i.i.d. continuous r.v.'s.
 $H_0:$ $D_i$ has symmetric distribution about 0.
 
 
-**Claim:** Under $H_0$, $\E W_+  = \frac{n(n+1)}{4}$ and $\V(W_+) = \frac{n(n+1)(2n+1)}{24}$.
+**Claim:** Under $H_0$, $\E W_+  = \frac{n(n+1)}{4}$ and $\Var(W_+) = \frac{n(n+1)(2n+1)}{24}$.
 
 **Proof:**
 
