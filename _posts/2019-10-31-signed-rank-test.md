@@ -36,7 +36,7 @@ $H_0:$ $D_i$ has symmetric distribution about 0.
    Under $H_0$, we know that each $D_i$ has a probability of $\frac{1}{2}$ to be positive. Then we may rewrite $W_+$ as follows:
 
    $$
-   W_+ = \sum\limits_{i:~D_i>0} D_i = \sum\limits_{k=1}^n k I\{\mbox{the k-th largest absolute value} >0 \},
+   W_+ = \sum\limits_{k=1}^n k I\{\mbox{the k-th largest absolute value} >0 \},
    $$
 where the indicator functions, are i.i.d. $\text{Ber}(\frac{1}{2})$ r.v.'s.
 
