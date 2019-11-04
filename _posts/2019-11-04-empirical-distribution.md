@@ -30,7 +30,7 @@ For each fixed $x$, $F_n(x)$, when considered as a function of the sample, is a 
    \sqrt{n}\left(F_n(x)-F(x)\right) \stackrel{\mathcal{D}}{\longrightarrow} N\left(0, \frac{F(x)(1-F(x))}{n}\right).
    $$
 
-4. If we directly apply SLLN to i.i.d. r.v.'s $I\{X_{i} \le x \}$, we see that $F_n(x)$ is strongly consistent: $F_n(x) \stackrel{\text{a.s.}}{\longrightarrow} F(x)$.
+4. If we directly apply SLLN to i.i.d. r.v.'s $$I\{X_{i} \le x \}$$, we see that $F_n(x)$ is strongly consistent: $F_n(x) \stackrel{\text{a.s.}}{\longrightarrow} F(x)$.
 
 5. Actually, it's well-known that $F_n(x)$ is strong uniform consistent estimator of $F(x)$:
 
