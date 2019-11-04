@@ -13,7 +13,7 @@ $$
 F_{n}(x)=\frac{1}{n} \sum\limits_{i=1}^{n} I\left\{X_{i} \le x\right\}.
 $$
 
-For each fixed $x$, $F_n(x)$, when considered as a function of the sample, is a random variable. There are many immediate and interesting facts about it. I'll list some of them below and I'll omitted obvious details and traditional arguments.
+For each fixed $x$, $F_n(x)$, when considered as a function of the sample, is a random variable. There are many immediate and interesting facts about it. I'll list some of them below and I'll omitted obvious details and routine arguments.
 
 1. $F_n(x)$ is unbiased as an estimator of $F(x)$, i.e., $\E(F_n(x)) = F(x)$.
 
