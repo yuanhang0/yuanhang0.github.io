@@ -33,14 +33,15 @@ For each fixed $x$, $F_n(x)$, when considered as a function of the sample, is a 
 4. If we directly apply SLLN to i.i.d. r.v.'s $I\{X_{i} \le x \}$, we see that $F_n(x)$ is strongly consistent: $F_n(x) \stackrel{\text{a.s.}}{\longrightarrow} F(x)$.
 
 5. Actually, it's well-known that $F_n(x)$ is strong uniform consistent estimator of $F(x)$:
+
     **Theorem (Glivenko-Cantelli).**
 
-   $$
-   \|F_n - F \|_{\infty} = \sup\limits_{x\in \mathbb{R}} |F_n(x) - F (x)|
-   \stackrel{\text{a.s.}}{\longrightarrow} 0.
-   $$
+    $$
+     \|F_n - F \|_{\infty} = \sup\limits_{x\in \mathbb{R}} |F_n(x) - F (x)|
+     \stackrel{\text{a.s.}}{\longrightarrow} 0.
+    $$
 
-   Proof of this theorem can be found in many textbooks. For a direct approach, see *Asymptotic Statistics* by A.W.  van der Vaart. A totally different approach, which uses the DKW inequality together with Borel–Cantelli lemma, is given in *Approximation Theorems of Mathematical Statistics* by Robert J. Serfling.
+    Proof of this theorem can be found in many textbooks. For a direct approach, see *Asymptotic Statistics* by A.W.  van der Vaart. A totally different approach, which uses the DKW inequality together with Borel–Cantelli lemma, is given in *Approximation Theorems of Mathematical Statistics* by Robert J. Serfling.
 
 6. Glivenko-Cantelli Theorem together with continuity of a statistical functional $T: \mathcal{P}\to \mathbb{R}$ can give us almost sure convergence of $T(F_n)$, as a functional plug-in estimator.
 
@@ -56,18 +57,18 @@ For each fixed $x$, $F_n(x)$, when considered as a function of the sample, is a 
 
 8. Fortunately, we can make use of Donsker's Theorem to derive the asymptotic distribution of $D_n$ if $F$ is continuous.
 
-**Theorem (Donkser).**
+    **Theorem (Donkser).**
 
-$$
-   \sqrt{n}(F_n(x) - F (x)) \stackrel{\mathcal{D}}{\longrightarrow} \sup _{t}|B(F(t))|,
-$$
+    $$
+     \sqrt{n}(F_n(x) - F (x)) \stackrel{\mathcal{D}}{\longrightarrow} \sup _{t}|B(F(t))|,
+    $$
 
-i.e., the sequence of empirical processes converges in distribution in the space $\mathcal{D}[-\infty, \infty]$ to a $F$-Brownian bridge process.
+    i.e., the sequence of empirical processes converges in distribution in the space $\mathcal{D}[-\infty, \infty]$ to a $F$-Brownian bridge process.
 
-Kolmogorov showed that if $F$ is continuous,
+    Kolmogorov showed that if $F$ is continuous,
 
-$$
-\sqrt{n} D_{n} \stackrel{\mathcal{D}}{\longrightarrow} \sup _{t}|B(t)|.
-$$
+    $$
+    \sqrt{n} D_{n} \stackrel{\mathcal{D}}{\longrightarrow} \sup _{t}|B(t)|.
+    $$
 
-Regarding computational discussions can be found in *Large Sample Techinques* by Jiming Jiang.
+    Regarding computational discussions can be found in *Large Sample Techinques* by Jiming Jiang.
