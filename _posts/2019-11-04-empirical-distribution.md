@@ -71,4 +71,4 @@ For each fixed $x$, $F_n(x)$, when considered as a function of the sample, is a 
     \sqrt{n} D_{n} \stackrel{\mathcal{D}}{\longrightarrow} \sup _{t}|B(t)|.
     $$
 
-    Regarding computational discussions can be found in *Large Sample Techinques* by Jiming Jiang.
+    Some detailed discussions on the computation can be found in *Large Sample Techinques* by Jiming Jiang.
