@@ -88,12 +88,12 @@ head: # 删改前确定知道自己在做什么
     value: stylesheet
   - key: href
     value: /public/css/lanyon.css # 用cdn加速会出问题，暂时不知道为什么
-#- tag: link
-#  var:
-#  - key: rel
-#    value: stylesheet
-#  - key: href
-#    value: //cdn.jsdelivr.net/gh/wu-kan/wu-kan.github.io/public/css/wu-kan.css
+- tag: link
+  var:
+  - key: rel
+    value: stylesheet
+  - key: href
+    value: /public/css/wu-kan.css # //cdn.jsdelivr.net/gh/wu-kan/wu-kan.github.io/public/css/wu-kan.css
 - tag: link
   var:
   - key: rel
