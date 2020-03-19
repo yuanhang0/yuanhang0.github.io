@@ -32,8 +32,7 @@ We use Bayes's Rule as follows:
 $$
 \begin{aligned}
 P(X=x\vert A) &= \frac{P(X=x, A)}{P(A)} = \frac{P(A\vert X=x)P(X=x)}{\sum_i P(A|X=i)P(X=i)} \\
-& = \frac{{4 \choose 3} \cdot \left(\frac{x}{5}\right)^1\cdot \left(\frac{5-x}{5} \right)^3 \cdot {5 \choose x}\cdot\left(\frac{1}{2}\right)^5
-}{\sum\limits_{i=1}^4 {4 \choose 3} \cdot \left(\frac{i}{5}\right)^1\cdot \left(\frac{5-i}{5} \right)^3 \cdot {5 \choose i}\cdot\left(\frac{1}{2}\right)^5},~~~ x=1,...,4.
+& = \frac{ {4 \choose 3} \cdot \left(\frac{x}{5}\right)^1\cdot \left(\frac{5-x}{5} \right)^3 \cdot {5 \choose x}\cdot\left(\frac{1}{2}\right)^5 } {\sum\limits_{i=1}^4 {4 \choose 3} \cdot \left(\frac{i}{5}\right)^1\cdot \left(\frac{5-i}{5} \right)^3 \cdot {5 \choose i}\cdot\left(\frac{1}{2}\right)^5},~~~ x=1,...,4.
  \end{aligned}
 $$
 
