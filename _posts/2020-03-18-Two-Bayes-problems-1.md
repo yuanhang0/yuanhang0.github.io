@@ -12,7 +12,7 @@ My friends asked me two Bayes questions a while ago. Due to the rapid spread of 
 There are five balls in a bag. Each ball is colored either black or white with equal chance. Now suppose that someone have already drawn the ball 4 times with replacements, among which he/she got 1 white ball and 3 black balls as a result.
 Find the probability distribution of the number of white balls in that bag.
 
-This problem is a straightforward application of Bayes's Rule. The only tricky part is to formulate the problem statement with math language.
+This problem is a straightforward application of Bayes' Rule. The only tricky part is to formulate the problem statement with math language.
 
 Let $X$ be the number of white balls and let event $A = [\text{1 white ball and 3 black balls among 4 trials}]$. The prior distribution of $X$ is simply the binomial distribution $B(5, \frac{1}{2})$.
 Actually, we are interested in finding the posterior probability $P(X=x\vert A)$.
