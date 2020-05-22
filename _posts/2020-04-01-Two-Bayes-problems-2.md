@@ -14,7 +14,7 @@ There are $a+b$ coins whose prior distribution of getting a head $p_i$ are i.i.d
 If those $a+b$ coins do not have i.i.d. $p_i$, instead, they share a common $p\sim \operatorname{Beta}(1,1)$. How would the answer change?
 
 
-Let's start with the first case. Consider one coin among those $b$ coins. Denote $T_n$ and $H_n$ to be the event that we obtain a tail or a head on the n-th toss, respectively. We need to compute the probability of getting a head after we seeing a tail on the first trial, i.e., $P(H_2~\vert~T_1)$:
+Let's start with the first case. Consider one coin among those $b$ coins. Denote $T_n$ and $H_n$ to be the event that we obtain a tail or a head on the n-th toss, respectively. We need to compute the probability of getting a head after we seeing a tail on the first trial, i.e., $P(H_2 \vert T_1)$:
 
 $$
 \begin{aligned}
