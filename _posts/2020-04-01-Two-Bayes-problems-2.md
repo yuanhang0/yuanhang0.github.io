@@ -18,7 +18,7 @@ Let's start with the first case. Consider one coin among those $b$ coins. Denote
 
 $$
 \begin{aligned}
-P(H_2~|~T_1) & =  \frac{P(T_1 \cap H_2)}{P(T_1)} = \frac{ \int P(T_1 \cap H_2~|~p_i) f(p_i) ~dp_i}{\int P(T_1~|~p_i) f(p_i) ~dp_i}\\
+P(H_2~\vert~T_1) & =  \frac{P(T_1 \cap H_2)}{P(T_1)} = \frac{ \int P(T_1 \cap H_2~\vert~p_i) f(p_i) ~dp_i}{\int P(T_1~\vert~p_i) f(p_i) ~dp_i}\\
 & = \frac{ \int_0^1 (1-p_i)p_i  ~dp_i}{\int_0^1 1-p_i ~dp_i} = \frac{1/6}{1/2} = \frac{1}{3},
 \end{aligned}
 $$
@@ -34,8 +34,8 @@ We note that
 
 $$
 \begin{aligned}
-f(p|A) &= \frac{P(A|p)f(p)}{P(A)} \propto p^a(1-p)^b,
+f(p\vert A) &= \frac{P(A\vert p)f(p)}{P(A)} \propto p^a(1-p)^b,
  \end{aligned}
 $$
 
-which is the density of $\operatorname{Beta}(a+1,b+1)$. Thus, the expectation $\E(p|A) = \frac{a+1}{a+b+2}$, which tells us that we should expect to see $\frac{a+1}{a+b+2}b$ heads among those $b$ coins.
+which is the density of $\operatorname{Beta}(a+1,b+1)$. Thus, the expectation $\E(p\vert A) = \frac{a+1}{a+b+2}$, which tells us that we should expect to see $\frac{a+1}{a+b+2}b$ heads among those $b$ coins.
