@@ -109,7 +109,7 @@ body:
 script: # 需要在正文后调用的脚本
 - src: //cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js # jQuery
 # - src: //cdn.jsdelivr.net/npm/ribbon.js/dist/ribbon.min.js # 彩带背景
-- src: //cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js # live2d 
+- src: //cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.css # live2d 
 # - src: //cdn.jsdelivr.net/gh/wu-kan/wu-kan.github.io/public/js/baidu_push.js # 百度推送
 - src: //cdn.jsdelivr.net/npm/prismjs/components/prism-core.min.js
 - src: //cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
