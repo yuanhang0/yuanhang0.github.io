@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A proof of the Polya's Theorem
+title: A Proof of Polya's Theorem
 # subtitle: Each post also has a subtitle
 tag: Probability
 date: 2020-06-21
