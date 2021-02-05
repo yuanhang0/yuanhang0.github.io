@@ -32,6 +32,7 @@ where equality holds iff $c = \mu$.
 $$\mu = \E(X) = \arg \min_{c} \E(\|X-c\|_1^1).$$
 
 We first rewrite $\E(\|X-c\|_1)$ in a convenient form as follows:
+
 $$
 \begin{aligned}
 g(c)  = \E\vert X-c\vert = \int_{0}^\infty P(\vert X-c \vert \ge t) ~dt & = \int_{0}^\infty P(X\ge c+t) ~dt +\int_{0}^\infty P(X<c-t) ~dt\\
@@ -89,7 +90,7 @@ $$
 \end{aligned}
 $$
 
-Hence, minimizing $$\frac{1}{n}\sum_{i=1}^n \|x_i -c \|_0 $$ is equivalent to maximizing
+Hence, minimizing $\frac{1}{n}\sum_{i=1}^n \vert x_i -c \vert_0 $ is equivalent to maximizing
 
 $$
 \begin{aligned}
