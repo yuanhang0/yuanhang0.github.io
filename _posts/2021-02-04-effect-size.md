@@ -24,6 +24,7 @@ If $\sigma$ is known, then the estimating/testing process would be straightforwa
 $$
 T = \frac{\bar{X}-\bar Y}{s_p\sqrt{1/n+1/m}} \sim N(0,1) \text{ under } H_0:~\mu_1=\mu_2,
 $$
+
 where $s_p^2 = \dfrac{(n-1)s_X^2 + (m-1)s_Y^2 }{n+m-2} = \frac{1}{n+m-2}\left( \sum_{i=1}^n (X_i-\bar{X})^2+\sum_{j=1}^m (Y_j-\bar{Y})^2\right)$ is the pooled sample variance.
 
 In the example mentioned in [this post](https://datahonor.com/2021/02/03/P-value-or-Effect-size/), we have $\bar{x} = 17.3, \bar{y} = 15.6, n=m=75, \delta = 0.3$, where Cohen's $d$, $\delta$, is defined as the standardized mean difference:
@@ -39,15 +40,19 @@ t = \frac{\bar x - \bar y}{s_p\sqrt{2/n}} = \frac{\delta}{\sqrt{2/n}}.
 $$
 
 Therefore, when testing $H_0:~\mu_1=\mu_2$ vs. $H_1:~\mu_1>\mu_2$, we would reject $H_0$ at level $100(1-\alpha)\%$ if $T>Z_\alpha$, or equivalently, $\frac{\delta}{\sqrt{2/n}} >Z_\alpha$. If $\delta = 0.3$, then we see that
+
 $$
 \frac{\delta}{\sqrt{2/75}} \approx 1.837 > Z_{0.05}\approx 1.645,
 $$
+
 which suggests that there's sufficient evidence for us to reject $H_0$ at significance level 95%.
 
 We can also compute the corresponding p-value:
+
 $$
 p  = P(T \ge t~|~H_0) = 1-\Phi(1.837) \approx 0.033,
 $$
+
 which means that the probability of observing a sample with a more extreme test statistic value would be 0.033. Note that p-value is smaller than 0.05, so we would also reject $H_0$ at level 95% from the perspective of p-value.
 
 We see that Cohen's $d$, $\delta$, also provides us some kind of information like p-value. But instead of probability, it gives us the standardized difference between two means. The larger $\delta$ is, the stronger the evidence that we reject $H_0$ is.
@@ -71,6 +76,7 @@ $$
 ![](/public/image/Rplot2.png)
 
 **Probability of superiority** is the probability that a randomly selected individual from the treatment group will have a higher score than a randomly selected individual from the control group, i.e., $P(X > Y)$. From our last observation above $\frac{X-Y}{s_p} \sim N\left(\delta,2\right)$, we know that
+
 $$
 \frac{\frac{X-Y}{s_p} - \delta }{ \sqrt 2}\sim N\left(0,1\right).
 $$
