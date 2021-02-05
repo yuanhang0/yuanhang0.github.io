@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Two-Sample Test and Effect Size
+title: Two-Sample Test and Cohen's $d$
 # subtitle: Each post also has a subtitle
 tag: Statistics
 date: 2021-02-04
