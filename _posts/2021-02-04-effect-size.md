@@ -55,7 +55,7 @@ $$
 
 which means that the probability of observing a sample with a more extreme test statistic value would be 0.033. Note that p-value is smaller than 0.05, so we would also reject $H_0$ at level 95% from the perspective of p-value.
 
-We see that Cohen's $d$, $\delta$, also provides us some kind of information like p-value. But instead of probability, it gives us the standardized difference between two means. The larger $\delta$ is, the stronger the evidence that we reject $H_0$ is.
+We see that Cohen's $d$, $\delta$, also provides us some kind of information like p-value. But instead of probability, it gives us the standardized difference between two means. The larger $\delta$ is, the stronger is the evidence that suggests rejecting $H_0$.
 
 Actually, we can make more sense of it by looking at the following quantities. Note that after the standardization as in the definition of Cohen's $d$, we have the following observations:
 
