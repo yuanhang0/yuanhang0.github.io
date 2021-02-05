@@ -1,36 +1,27 @@
-<script type="text/x-mathjax-config">
-  window.MathJax = {
-    options: {
-      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-      ignoreHtmlClass: 'tex2jax_ignore',
-      processHtmlClass: 'tex2jax_process'
+<script>
+window.MathJax = {
+  options: {
+    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  },
+  tex: {
+    inlineMath: [['$','$']],
+    processEscapes: true,
+    macros: {
+      Cov: '{\\operatorname{Cov}}',
+      E: '{\\operatorname{E}}',
+      Var: '{\\operatorname{Var}}'
     },
-    tex: {
-      inlineMath: [['$','$']],
-      displayMath: [ ['$$','$$'] ],
-      processEscapes: true,
-      macros: {
-        Cov: '{\\operatorname{Cov}}',
-        E: '{\\operatorname{E}}',
-        Var: '{\\operatorname{Var}}'
-      },
-      autoload: {
-        color: [],
-        colorv2: ['color']
-      },
-      packages: {'[+]': ['noerrors']}
+    autoload: {
+      color: [],
+      colorv2: ['color']
     },
-    loader: {
-      load: ['input/asciimath', '[tex]/noerrors']
-    }
-  };
-
+    packages: {'[+]': ['noerrors']}
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/noerrors']
+  }
+};
 </script>
-  <script type="text/javascript" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script">
-  </script>
-  <!--
-  CommonHTML: { linebreaks: { automatic: true } },
-  "HTML-CSS": { linebreaks: { automatic: true } },
-  SVG: { linebreaks: { automatic: true } }
-  -->
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
