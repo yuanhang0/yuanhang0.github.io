@@ -53,7 +53,7 @@ $$
 p  = P(T \ge t~|~H_0) = 1-\Phi(1.837) \approx 0.033,
 $$
 
-which means that the probability of observing a sample with a more extreme test statistic value would be 0.033. Note that p-value is smaller than 0.05, so we would also reject $H_0$ at level 95% from the perspective of p-value.
+which means that the probability of observing a sample with a more extreme test statistic value would be 0.033. Note that the p-value is smaller than 0.05, so we would also reject $H_0$ at level 95% from the perspective of the p-value.
 
 We see that Cohen's $d$, $\delta$, also provides us some kind of information like p-value. But instead of probability, it gives us the standardized difference between two means. The larger $\delta$ is, the stronger is the evidence that suggests rejecting $H_0$.
 
@@ -67,7 +67,7 @@ Then, we can plot their densities on the same graph as shown below. Here the blu
 
 ![](/public/image/Rplot1.png)
 
-The **overlapping coefficient** (OVL) refer to the area under these two probability densities simultaneously. Note that this area is symmetric around the gray axis in the plot below. So we can compute it as follows:
+The **overlapping coefficient** (OVL) refers to the area under these two probability densities simultaneously. Note that this area is symmetric around the gray axis in the plot below. So we can compute it as follows:
 
 $$
 \text{ OVL } = 2\Phi\left(\frac{\vert \delta\vert}{2}\right).
