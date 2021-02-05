@@ -107,7 +107,7 @@ T = \frac{\bar{X}-\bar Y}{s_p\sqrt{1/n+1/m}} \sim t_{(n+m-2)} \text{ under } H_0
 $$
 
 Hint:
-Recall that if $U\sim N(0,1)$, $V\sim\chi^2_{(r)}$ and $U$ is independent of $V$, then $\frac{U}{\sqrt{V/r}} \sim t_{(r)}$.  
+Recall that if $U\sim N(0,1)$, \(V\sim\chi^2_{(r)}\) and $U$ is independent of $V$, then $\frac{U}{\sqrt{V/r}} \sim t_{(r)}$.  
 
 
 Q2. What if the two samples have unequal variances?
