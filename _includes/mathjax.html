@@ -1,19 +1,36 @@
 <script type="text/x-mathjax-config">
   window.MathJax = {
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      ignoreHtmlClass: 'tex2jax_ignore',
+      processHtmlClass: 'tex2jax_process'
+    },
     tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      inlineMath: [['$','$']],
+      displayMath: [ ['$$','$$'] ],
       processEscapes: true,
       macros: {
         Cov: '{\\operatorname{Cov}}',
         E: '{\\operatorname{E}}',
         Var: '{\\operatorname{Var}}'
-      }
-    }
-    svg: {
-      fontCache: 'global'
+      },
+      autoload: {
+        color: [],
+        colorv2: ['color']
+      },
+      packages: {'[+]': ['noerrors']}
+    },
+    loader: {
+      load: ['input/asciimath', '[tex]/noerrors']
     }
   };
+
 </script>
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
-</script>
+  <script type="text/javascript" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script">
+  </script>
+  <!--
+  CommonHTML: { linebreaks: { automatic: true } },
+  "HTML-CSS": { linebreaks: { automatic: true } },
+  SVG: { linebreaks: { automatic: true } }
+  -->
