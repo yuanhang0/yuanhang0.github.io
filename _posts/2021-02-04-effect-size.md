@@ -84,7 +84,8 @@ $$
  Thus,
 
 $$
-P(X>Y) = P\left(\frac{X-Y }{s_p} > 0 \right) = P\left(\frac{\frac{X-Y}{s_p} - \delta }{ \sqrt 2}> -\frac{\delta}{\sqrt 2} \right) = P\left(Z > -\frac{\delta}{\sqrt 2}\right) = \Phi\left( \frac{\delta}{\sqrt 2}\right).
+
+P(X>Y) =  P\left(\frac{\frac{X-Y}{s_p} - \delta }{ \sqrt 2}> -\frac{\delta}{\sqrt 2} \right) = P\left(Z > -\frac{\delta}{\sqrt 2}\right) = \Phi\left( \frac{\delta}{\sqrt 2}\right).
 $$
 
 **Cohen's $U_3$** is defined as the percentage of the control group's population which the upper half of the cases of the treatment group's population exceeds. It's just the area in yellow as shown below. Clearly,
