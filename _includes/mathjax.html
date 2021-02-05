@@ -4,13 +4,16 @@
       skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
     },
     tex: {
-      inlineMath: [['$','$']],
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
       processEscapes: true,
       macros: {
         Cov: '{\\operatorname{Cov}}',
         E: '{\\operatorname{E}}',
         Var: '{\\operatorname{Var}}'
       }
+    }
+    svg: {
+      fontCache: 'global'
     }
   };
 </script>
