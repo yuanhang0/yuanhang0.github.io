@@ -59,7 +59,7 @@ which is less than 0 if $c$ is smaller than the median $m$, and is greater than 
 
 $$\mu = \E(X) = \arg \min_{c} \E(\|X-c\|_0^0) = \arg \min_{c} \E(\|X-c\|_0), $$
 
-where $$\|x\|_0$$ is the number of nonzero elements. For one-dimensional case, it's simply the indicator function: $$\|x\|_0 = I\{x\ne 0\}$$. Note that $$\|x\|_0^0 = I\{x\ne 0\}^0 = I\{x\ne 0\}$$ since $0^0 = 0$ and $x^0=1$ if $x\ne 0$.
+where $\vert x\vert_0$ is the number of nonzero elements. For one-dimensional case, it's simply the indicator function: $\vert x\vert_0 = I\{x\ne 0\}$. Note that $\vert x\vert_0^0 = I\{x\ne 0\}^0 = I\{x\ne 0\}$ since $0^0 = 0$ and $x^0=1$ if $x\ne 0$.
 
 Thus, we have the following:
 
