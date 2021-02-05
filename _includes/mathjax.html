@@ -1,18 +1,18 @@
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']],
-    Macros: {
-      Cov: '{\\operatorname{Cov}}',
-      E: '{\\operatorname{E}}',
-      Var: '{\\operatorname{Var}}'
+  window.MathJax = {
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    },
+    tex: {
+      inlineMath: [['$','$']],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true,
+      macros: {
+        Cov: '{\\operatorname{Cov}}',
+        E: '{\\operatorname{E}}',
+        Var: '{\\operatorname{Var}}'
+      }
     }
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
+  };
 </script>
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
-</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
