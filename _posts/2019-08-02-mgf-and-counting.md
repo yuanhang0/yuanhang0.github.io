@@ -40,13 +40,13 @@ $$
 **Proof:**
 
 Consider the $n$-integer partition of $n\le x\le 6n$  with no constraint, denoted by
+
 $$
 X_1+X_2+\cdots + X_n = x, \quad X_i\in \mathbb{N}.
 $$
+
 Then, by the stars and bars method, the total number of such partitions can be easily found to be:
-$$
-{x-1 \choose n-1}.
-$$
+${x-1 \choose n-1}.$
 
 Now, among those partitions, we need to exclude the ones with at least one $X_i>6$.
 Let $A_i$ be the event that $X_i$ is greater than 6. Then the cardinality of the event that at least one $X_i>6$ can be computed by the inclusion-exclusion principle as follows:
