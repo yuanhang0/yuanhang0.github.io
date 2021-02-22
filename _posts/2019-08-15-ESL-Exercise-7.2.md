@@ -22,11 +22,12 @@ $$\operatorname{Err}_{\mathrm{B}} (x_{0})=\operatorname{Pr}\left(Y \neq G(x_{0})
 
 the irreducible Bayes error at $x_{0}$ .
 
-Using the approximation $\hat{f}\left(x_{0}\right) \sim N\left(\E \hat{f}\left(x_{0}\right), \Var\left(\hat{f}\left(x_{0}\right)\right), \text { show that }\right.$
+Using the approximation $\hat{f}\left(x_{0}\right) \sim N\left(\E \hat{f}\left(x_{0}\right), \Var\left(\hat{f}\left(x_{0}\right)\right)\right)$, show that
 
 $$
 \operatorname{Pr}\left(\hat{G}\left(x_{0}\right) \neq G\left(x_{0}\right) | X=x_{0}\right) \approx \Phi\left(\frac{\operatorname{sign}\left(\frac{1}{2}-f\left(x_{0}\right)\right)\left(\E \hat{f}\left(x_{0}\right)-\frac{1}{2}\right)}{\sqrt{\Var\left(\hat{f}\left(x_{0}\right)\right)}}\right),
 $$
+
 where $\Phi(t)$ is the cdf of $N(0,1)$.
 
 ---
@@ -36,7 +37,9 @@ Firstly, we note that for any three r.v.'s $A,B$ and $C$ we have the following p
 $$
 \left\{A\ne B\right\} =  \{A\ne C, C=B\} \sqcup  \{A\ne C, C\ne B, A\ne B\} \sqcup  \{A= C,~C\ne B\},
 $$
+
 where $\sqcup$ denotes the disjoint union of two sets. Then, we have:
+
 $$
 \begin{aligned} \operatorname{Err}\left(x_{0}\right) &=\operatorname{Pr}\left(Y \neq \hat{G}\left(x_{0}\right) | X=x_{0}\right) \\
 &=\operatorname{Pr}\left(Y \neq {G}\left(x_{0}\right),~G(x_0) =\hat{G}(x_0) | X=x_{0}\right)\\
