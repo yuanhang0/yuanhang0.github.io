@@ -92,7 +92,7 @@ $$
 \begin{aligned}
 \text{df}(\hat{Y}^{\text{ridge}}) & = \operatorname{Tr}(H_{\lambda}) = \operatorname{Tr}(UD\left(D^2 +\lambda I_n\right)^{-1} DU')\\
 & = \operatorname{Tr}(D\left(D^2 +\lambda I_n\right)^{-1} DU'U) = \operatorname{Tr}(D\left(D^2 +\lambda I_n\right)^{-1} D) \\
-& = \sum_{i=1}^{N} \frac{d_i^2}{d_i^2+\lambda} < p.
+& = \sum_{i=1}^{p} \frac{d_i^2}{d_i^2+\lambda} < p.
 \end{aligned}
 $$
 
