@@ -46,9 +46,11 @@ Then we see that:
 - $\operatorname{Tr}(H) = \operatorname{rank} (H) = \operatorname{rank} (X) = p+1$ and $\operatorname{Tr}(I-H)= n-p-1$.
 
 Typically, $\sigma^2$ is unknown and can be estimated by
+
 $$
 \hat{\sigma}^2 = \frac{RSS}{N-p-1},
 $$
+
 where RSS is the residual sum-of-squares. This is unbiased for $\sigma^2$. Instead of computing the expectation, we will derive the distribution of RSS. For the RSS, we note that
 
 $$
