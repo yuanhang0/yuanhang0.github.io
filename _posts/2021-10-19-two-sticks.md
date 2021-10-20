@@ -14,8 +14,8 @@ Here are the two little problems I encountered a while ago.
 
 2. Now we have two sticks one is clearly longer than the other and we make measurements of their length with a random instrumental error. The error distribution is zero mean with a constant variance. If only two measurements are allowed, can we improve the accuracy than just measuring each stick once?
 
-<!-- <details><summary>Solution (CLICK ME): </summary>
-<p> -->
+<details><summary>Solution (CLICK ME): </summary>
+<p>
 
 1.
 The problem formulation is straightforward. WLOG, let's assume the length of the stick is one. Denote the uniform distribution on [0,1] by $U\sim \text{Unif}[0,1]$. Let $X$ be the length of the shorter one. Then, we can derive the distribution of $X$ as follows: $\forall ~0\le x\le \frac{1}{2}$,
@@ -46,7 +46,7 @@ Let $\varepsilon$ denote the random instrumental error every time we make a meas
 
 By simple algebra, we obtain our measurement of $x$: $x+\frac{\varepsilon_1+\varepsilon_2}{2}$ and measurement of $y$: $y+\frac{\varepsilon_1-\varepsilon_2}{2}$.
 
-Note that even though the expectation of the error parts are the same as those when we taking measurements directly ($\E\frac{\varepsilon_1+\varepsilon_2}{2} = \E\varepsilon_1$  = \E\varepsilon_2 = 0$), the variances actually decrease: $\Var\left(\frac{\varepsilon_1+\varepsilon_2}{2}\right) = \Var\left(\frac{\varepsilon_1-\varepsilon_2}{2}\right) = \frac{\Var(\varepsilon)}{2} < \Var(\varepsilon)$.
+Note that even though the expectation of the error parts are the same as those when we taking measurements directly ($\E\frac{\varepsilon_1+\varepsilon_2}{2} = \E\varepsilon_1  = \E\varepsilon_2 = 0$), the variances actually decrease: $\Var\left(\frac{\varepsilon_1+\varepsilon_2}{2}\right) = \Var\left(\frac{\varepsilon_1-\varepsilon_2}{2}\right) = \frac{\Var(\varepsilon)}{2} < \Var(\varepsilon)$.
 
 By doing what's stated above, we take two measurements of $x$ and $y$ and thus get better estimates.
 </p>
