@@ -9,7 +9,7 @@ This website is intended to share my thoughts on some small but interesting prob
 
 A little bit about me: I have a Ph.D. degree in Statistics, a Master's and a Bachelor's degree in Electrical Engineering, and a Bachelor's degree in Mathematics. This very unique education background originated from my curiosity, which drove my to take many classes in college.
 
-Currently I'm working as a data scientist with a focus on commerical data analytics in the US.
+Currently I'm working as a data scientist with a focus on commercial data analytics in the US.
 
 I will keep updating this website but not on a regular basis. I hope you enjoy it!
 
@@ -24,7 +24,7 @@ I will keep updating this website but not on a regular basis. I hope you enjoy i
 博客基于[wu-kan's github pages](https://github.com/wu-kan/wu-kan.github.io) 详细配置可以参见[wu-kan's 这篇博文](https://wu-kan.github.io/posts/博客搭建/基于Jekyll搭建个人博客)
 
 ## Blog Updates
-- [ ] Reorgnize Useful links and resources
+- [ ] Reorganize [Useful Links and Comments](/comments)
 
 ## Readings
 - [x] Elements of Statistical Learning
