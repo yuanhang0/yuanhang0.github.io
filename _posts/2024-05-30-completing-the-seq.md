@@ -72,7 +72,7 @@ Another key is to note that "W is exhausted first" is the same as "R is the last
 
 Given that there are 4 sequences where W is exhausted first out of 10 equally likely sequences, the probability of running out of W first is:
 
-$$ P(\mbox{{run out of W first}) = 4/10 = 2/5 $$
+$$ P(\mbox{{run out of W first}) = 4/10 = 2/5.$$
 
 Notably, this is equivalent to calculating the probability that the last ball is red, which is also
 $2/5$. This observation is powerful because it allows us to calculate the probability for any
