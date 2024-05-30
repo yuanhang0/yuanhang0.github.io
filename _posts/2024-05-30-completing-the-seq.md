@@ -41,8 +41,8 @@ Consider the sequence of draws when Peter and Paula play. If Paula goes first, s
 
 By completing the sequence, we find the equivalent event: who will draw the red ball. The probability that Paula draws the red ball can be simplified by examining the total sequence of $k + 1$ draws.
 
-- If $k$ is even, both players have the same number of turns. Paula can go first or second; it doesn't matter.
-- If $k$ is odd, Paula should go second. This ensures she draws the red ball on an even-numbered draw (the $(k+1)^{th}$ ball), ensuring she has the last turn.
+- If $k+1$ is even, both players have the same number of turns. Paula can go first or second; it doesn't matter.
+- If $k+1$ is odd, Paula should go first. This ensures she draws more balls and hence has a higher probability of having the red ball.
 
 ### The Card Drawing Game
 
