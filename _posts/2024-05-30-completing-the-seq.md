@@ -2,7 +2,7 @@
 layout: post
 title: Completing the Sequence: A Simple Probability Trick - By ChatGPT
 # subtitle: Each post also has a subtitle
-tag: [Probability]
+tag: Probability
 date: 2024-05-30
 comments: true
 ---
