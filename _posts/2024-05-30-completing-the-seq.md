@@ -15,7 +15,7 @@ In our discussions, we explored three fascinating probability problems that illu
 
 ## Problem 1: The Red Ball Game
 
-Peter and Paula are playing a game with \(k\) black balls and 1 red ball. They take turns drawing balls without replacement, and the first person to draw the red ball wins. Peter gallantly offers Paula the choice of who goes first. How should Paula decide?
+Peter and Paula are playing a game with $k$ black balls and 1 red ball. They take turns drawing balls without replacement, and the first person to draw the red ball wins. Peter gallantly offers Paula the choice of who goes first. How should Paula decide?
 
 ## Problem 2: The Card Drawing Game
 
@@ -39,10 +39,10 @@ The trick is to imagine completing the entire sequence of draws, even if the gam
 
 Consider the sequence of draws when Peter and Paula play. If Paula goes first, she draws at positions 1, 3, 5, and so on. If Peter goes first, he draws at those positions instead.
 
-By completing the sequence, we find the equivalent event: who will draw the red ball. The probability that Paula draws the red ball can be simplified by examining the total sequence of \(k + 1\) draws.
+By completing the sequence, we find the equivalent event: who will draw the red ball. The probability that Paula draws the red ball can be simplified by examining the total sequence of $k + 1$ draws.
 
-- If \(k\) is even, both players have the same number of turns. Paula can go first or second; it doesn't matter.
-- If \(k\) is odd, Paula should go second. This ensures she draws the red ball on an even-numbered draw (the \((k+1)^{th}\) ball), ensuring she has the last turn.
+- If $k$ is even, both players have the same number of turns. Paula can go first or second; it doesn't matter.
+- If $k$ is odd, Paula should go second. This ensures she draws the red ball on an even-numbered draw (the $(k+1)^{th}$ ball), ensuring she has the last turn.
 
 ### The Card Drawing Game
 
@@ -60,7 +60,7 @@ Each of these sequences is equally probable. The expected outcome for A is:
 $$E(X) = (1/6) * (2 + 1 + 1 + 0 + 0 + 0) = 4/6 = 2/3 $$
 
 
-Thus, A should pay B \(2/3\) dollars to make the game fair.
+Thus, A should pay B $2/3$ dollars to make the game fair.
 
 ### Running Out of White Balls
 
