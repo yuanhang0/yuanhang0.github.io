@@ -39,8 +39,9 @@ $$
 The problem with the ratio $\frac{1-X}{X}$ is that as the denominator approaches zero the density doesn't decay.
 Actually, the phenomenon when a r.v. $Y$ has finite expected value while $\frac{1}{Y}$ does not is quite common. One may consider uniform distribution and inverse uniform distribution, exponential distribution and inverse exponential distribution, etc.
 
-
+<br/>
 2.
+
 Let $\varepsilon$ denote the random instrumental error every time we make a measurement. Say two sticks have lengths $x,y$ and $x>y$.
  If we put two sticks together and measure $x+y$, we get $x+y+\varepsilon_1$. Next, we align two sticks and measure $x-y$ to get $x-y+\varepsilon_2$.
 
