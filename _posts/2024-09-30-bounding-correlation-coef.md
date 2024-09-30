@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Renewal Theory
+title: Exploring the Bounds of Correlation for Three or More Random Variables
 # subtitle: Each post also has a subtitle
 tag: [Probability, Statistics]
-date: 2022-06-19
+date: 2024-09-30
 comments: true
 ---
 Today, I’m organizing and sharing some thoughts on the range of correlation coefficients. I’ve written about the general case on my blog [before](https://yuanhang0.github.io/posts/variance-of-N-id-rv's), and recently a friend asked me about a question involving three random variables during an interview. I’ve already shared this post in my [Xiaohongshu](https://www.xiaohongshu.com/user/profile/60b9d0b6000000000101f156) (Yes, I recently started my personal account on Xiaohongshu to share some quick thoughts and short notes!). Alright, let’s jump in!
@@ -72,6 +72,3 @@ $$
 \frac{1}{1 - n} \le \rho \le 1.
 $$
 
-</p>
-</details>
-<br/>
